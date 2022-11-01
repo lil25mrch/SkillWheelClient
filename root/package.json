@@ -6,6 +6,8 @@
     "start": "ng serve",
     "build": "ng build",
     "watch": "ng build --watch --configuration development",
+    "build:prod": "ng build --prod --base-href https://lil25mrch.github.io/skill-wheel-client.github.io/",
+    "test:headless": "ng test --watch=false --browsers=ChromeHeadless",
     "test": "ng test"
   },
   "private": true,
