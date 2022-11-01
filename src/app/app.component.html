@@ -1,4 +1,8 @@
 <div class="main">
+  <button (click)="createWheel(humansT)">Humans</button>
+  <button (click)="createWheel(elvesT)">Elves</button>
+  <button (click)="createWheel(ligaT)">Liga</button>
+  <button (click)="createWheel(necrT)">Necr</button>
   <div class="header_container">
   <div *ngFor="let section of structure.sections">
     <div *ngIf="section.section_id == 0" >

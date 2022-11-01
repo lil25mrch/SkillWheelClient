@@ -1,7 +1,11 @@
 import { Component, OnInit } from "@angular/core";
 import { structure } from "src/app/structures/structure";
-import humans from "src/app/data/humans.json";
 import spellModel from "src/app/data/spell.json";
+import humans from "src/app/data/humans.json";
+import elves from "src/app/data/elves.json";
+import necr from "src/app/data/necr.json";
+import liga from "src/app/data/liga.json";
+
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
@@ -11,32 +15,39 @@ import spellModel from "src/app/data/spell.json";
 export class AppComponent implements OnInit{
   public structure = structure;
 
+  public humansT = humans;
+  public elvesT = elves;
+  public necrT = necr;
+  public ligaT = liga;
+
   public spellCountFC = 4;
   public spellCountSC = 3;
   public spellCountFrC = 5;
 
   ngOnInit(): void {
-    this.createWheel();
+    this.createWheel(this.humansT);
   }
 
-  public createWheel() {
+  public createWheel(race: typeof humans) {
     for (let i = 0; i < structure.sections.length; i++) {
-      let humanSpells = humans.filter(spell => structure.sections[i].section_id == spell.SectionId && structure.sections[i].level_depth[0].id == spell.DepthLevel);
+      let humanSpells = race.filter(spell => structure.sections[i].section_id == spell.SectionId && structure.sections[i].level_depth[0].id == spell.DepthLevel);
       structure.sections[i].level_depth[0].spells.forEach((spell, index) => {
-        let model = spellModel.find(id => humanSpells[index].SkillId == id.Id);
-        spell.spell_id = model?.Id;
-        spell.name = model?.Name;
-        spell.description = model?.Description;
-        spell.image = model?.Image;
-        switch (humanSpells.length) {
-          case 4: {
-            spell.style = spell.style_four;
-            break;
+        if(humanSpells[index]) {
+          let model = spellModel.find(id => humanSpells[index].SkillId == id.Id);
+          spell.spell_id = model?.Id;
+          spell.name = model?.Name;
+          spell.description = model?.Description;
+          spell.image = model?.Image;
+          switch (humanSpells.length) {
+            case 4: {
+              spell.style = spell.style_four;
+              break;
+            }
           }
         }
       })
 
-      let humanSpells1 = humans.filter(spell => structure.sections[i].section_id == spell.SectionId && structure.sections[i].level_depth[1].id == spell.DepthLevel);
+      let humanSpells1 = race.filter(spell => structure.sections[i].section_id == spell.SectionId && structure.sections[i].level_depth[1].id == spell.DepthLevel);
       structure.sections[i].level_depth[1].count = humanSpells1.length;
       structure.sections[i].level_depth[1].spells.forEach((spell, index) => {
         if(humanSpells1[index]){
@@ -64,7 +75,7 @@ export class AppComponent implements OnInit{
         }
       })
 
-      let humanSpells2 = humans.filter(spell => structure.sections[i].section_id == spell.SectionId && structure.sections[i].level_depth[2].id == spell.DepthLevel);
+      let humanSpells2 = race.filter(spell => structure.sections[i].section_id == spell.SectionId && structure.sections[i].level_depth[2].id == spell.DepthLevel);
       structure.sections[i].level_depth[2].count = humanSpells2.length;
       structure.sections[i].level_depth[2].spells.forEach((spell, index) => {
         if(humanSpells2[index]){
@@ -100,7 +111,7 @@ export class AppComponent implements OnInit{
         }
       })
 
-      let humanSpells3 = humans.filter(spell => structure.sections[i].section_id == spell.SectionId && structure.sections[i].level_depth[3].id == spell.DepthLevel);
+      let humanSpells3 = race.filter(spell => structure.sections[i].section_id == spell.SectionId && structure.sections[i].level_depth[3].id == spell.DepthLevel);
       structure.sections[i].level_depth[3].count = humanSpells3.length;
       structure.sections[i].level_depth[3].spells.forEach((spell, index) => {
         if(humanSpells3[index]){
