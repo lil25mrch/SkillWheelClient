@@ -10,10 +10,10 @@ export interface sectionModel {
 export interface levelModel {
   id: number,
   count: number,
-  spells: spellModel[]
+  spells: spellInterface[]
 }
 
-export interface spellModel {
+export interface spellInterface {
   id: number,
   spell_id: string | undefined,
   name: string | undefined,
@@ -25,5 +25,6 @@ export interface spellModel {
   style_three: string,
   style_four: string,
   style_five: string,
+  state: "" | "show" | "hide" | "selected" | "not_selected",
   color: string
 }

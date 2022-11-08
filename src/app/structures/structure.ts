@@ -17,8 +17,9 @@ export const structure: structureModel = {
               image: "",
               style: "",
               style_three: "",
-              style_four: "top: 2.1%%; left: 30%;",
+              style_four: "top: 0; left: 30%;",
               style_five: "",
+              state: "",
               color: "background-color: #193B94;"
             },
             {
@@ -29,8 +30,9 @@ export const structure: structureModel = {
               image: "",
               style: "",
               style_three: "",
-              style_four: "top: 2.1%%; left: 35%",
+              style_four: "top: -8.1%; left: 35%",
               style_five: "",
+              state: "",
               color: "background-color: #193B94;"
             },
             {
@@ -41,8 +43,9 @@ export const structure: structureModel = {
               image: "",
               style: "",
               style_three: "",
-              style_four: "top: 1.6%; left: 40%",
+              style_four: "top: -8.1%; left: 40%",
               style_five: "",
+              state: "",
               color: "background-color: #193B94;"
             },
             {
@@ -53,8 +56,9 @@ export const structure: structureModel = {
               image: "",
               style: "",
               style_three: "",
-              style_four: "top: 1.6%; left: 45%",
+              style_four: "top: -8.1%; left: 45%",
               style_five: "",
+              state: "",
               color: "background-color: #193B94;"
             },
           ],
@@ -64,39 +68,42 @@ export const structure: structureModel = {
           count: 0,
           spells: [
             {
-              id: 34,
+              id: 1,
               spell_id: "",
               name: "",
               description: "",
               image: "",
               style: "",
-              style_three: "top: 20%; left: 45%;",
+              style_three: "left: 44%; top: 11%;",
               style_four: "",
               style_five: "",
+              state: "",
               color: "background-color: #193B94;"
             },
             {
-              id: 35,
+              id: 2,
               spell_id: "",
               name: "",
               description: "",
               image: "",
               style: "",
-              style_three: "top: 60.3%; left: 24.13%;",
+              style_three: "left: 15.13%; top: 60.3%;",
               style_four: "",
               style_five: "",
+              state: "",
               color: "background-color: #193B94;"
             },
             {
-              id: 36,
+              id: 3,
               spell_id: "",
               name: "",
               description: "",
               image: "",
               style: "",
-              style_three: "top: 60.3%; left: 66.13%;",
+              style_three: "left: 73.13%; top: 60.3%;",
               style_four: "",
               style_five: "",
+              state: "",
               color: "background-color: #193B94;"
             },
           ],
@@ -106,16 +113,17 @@ export const structure: structureModel = {
           count: 0,
           spells: [
             {
-              id: 34,
+              id: 1,
               spell_id: "",
               name: "",
               description: "",
               image: "",
               style: "",
-              style_one: "top: 46%; left: 45.5%;",
+              style_one: "top: 44%; left: 44%;",
               style_three: "",
               style_four: "",
               style_five: "",
+              state: "",
               color: "background-color: #193B94;"
             }
           ],
@@ -123,44 +131,7 @@ export const structure: structureModel = {
         {
           id: 3,
           count: 0,
-          spells: [
-            {
-              id: 34,
-              spell_id: "",
-              name: "",
-              description: "",
-              image: "",
-              style: "",
-              style_three: "",
-              style_four: "",
-              style_five: "",
-              color: "background-color: #193B94;"
-            },
-            {
-              id: 35,
-              spell_id: "",
-              name: "",
-              description: "",
-              image: "",
-              style: "",
-              style_three: "",
-              style_four: "",
-              style_five: "",
-              color: "background-color: #193B94;"
-            },
-            {
-              id: 36,
-              spell_id: "",
-              name: "",
-              description: "",
-              image: "",
-              style: "",
-              style_three: "",
-              style_four: "",
-              style_five: "",
-              color: "background-color: #193B94;"
-            },
-          ],
+          spells: [],
         }
       ]
     },
@@ -181,6 +152,7 @@ export const structure: structureModel = {
               style_three: "top: 1.13%; right: 39.63%;",
               style_four: "",
               style_five: "",
+              state: "",
               color: "background-color: #193B94;"
             },
             {
@@ -190,9 +162,10 @@ export const structure: structureModel = {
               description: "",
               image: "",
               style: "top: 2.5%; right: 34.63%;",
-              style_three: "top: 1.13%; right: 39.63%;",
+              style_three: "top: 2.5%; right: 34.63%;",
               style_four: "",
               style_five: "",
+              state: "",
               color: "background-color: #193B94;"
             },
             {
@@ -202,9 +175,10 @@ export const structure: structureModel = {
               description: "",
               image: "",
               style: "top: 4.38%; right: 29.75% ;",
-              style_three: "top: 1.13%; right: 39.63%;",
+              style_three: "top: 4.38%; right: 29.75% ;",
               style_four: "",
               style_five: "",
+              state: "",
               color: "background-color: #193B94;"
             },
           ],
@@ -223,6 +197,7 @@ export const structure: structureModel = {
               style_three: "top: 5.5%; right: 27.75% ;",
               style_four: "top: 6.2%; right: 27.2%;",
               style_five: "top: 7.8%; right: 27.8%;",
+              state: "",
               color: "background-color: #193B94;"
             },
             {
@@ -235,6 +210,7 @@ export const structure: structureModel = {
               style_three: "top: 2.5%; right: 35.2%;",
               style_four: "top: 4%; right: 32.5%;",
               style_five: "top: 3.38%; right: 30.75%;",
+              state: "",
               color: "background-color: #193B94;"
             },
             {
@@ -247,6 +223,7 @@ export const structure: structureModel = {
               style_three: "top: 1.5%; right: 42.4%",
               style_four: "top: 2.2%; right: 38.2%;",
               style_five: "top: 4.8%; right: 35.75%;",
+              state: "",
               color: "background-color: #193B94;"
             },
             {
@@ -259,6 +236,7 @@ export const structure: structureModel = {
               style_three: "top: 1.5%; right: 42.4%",
               style_four: "top: 1.4%; right: 44%",
               style_five: "top: 1.3%; right: 39.63%;",
+              state: "",
               color: "background-color: #193B94;"
             },
             {
@@ -271,6 +249,7 @@ export const structure: structureModel = {
               style_three: "",
               style_four: "",
               style_five: "top: 3.13%; right: 44.63%",
+              state: "",
               color: "background-color: #193B94;"
             },
           ],
@@ -280,7 +259,7 @@ export const structure: structureModel = {
           count: 0,
           spells: [
             {
-              id: 34,
+              id: 1,
               spell_id: "",
               name: "",
               description: "",
@@ -291,10 +270,11 @@ export const structure: structureModel = {
               style_three: "top: 5.5%; right: 27.75% ;",
               style_four: "top: 6.2%; right: 27.2%;",
               style_five: "top: 7.8%; right: 27.8%;",
+              state: "",
               color: "background-color: #193B94;"
             },
             {
-              id: 35,
+              id: 2,
               spell_id: "",
               name: "",
               description: "",
@@ -305,10 +285,11 @@ export const structure: structureModel = {
               style_three: "top: 2.5%; right: 35.2%;",
               style_four: "top: 4%; right: 32.5%;",
               style_five: "top: 3.38%; right: 30.75%;",
+              state: "",
               color: "background-color: #193B94;"
             },
             {
-              id: 36,
+              id: 3,
               spell_id: "",
               name: "",
               description: "",
@@ -319,10 +300,11 @@ export const structure: structureModel = {
               style_three: "top: 1.5%; right: 42.4%",
               style_four: "top: 2.2%; right: 38.2%;",
               style_five: "top: 4.8%; right: 35.75%;",
+              state: "",
               color: "background-color: #193B94;"
             },
             {
-              id: 34,
+              id: 4,
               spell_id: "",
               name: "",
               description: "",
@@ -331,10 +313,11 @@ export const structure: structureModel = {
               style_three: "",
               style_four: "top: 1.4%; right: 44%",
               style_five: "top: 1.3%; right: 39.63%;",
+              state: "",
               color: "background-color: #193B94;"
             },
             {
-              id: 34,
+              id: 5,
               spell_id: "",
               name: "",
               description: "",
@@ -343,6 +326,7 @@ export const structure: structureModel = {
               style_three: "",
               style_four: "",
               style_five: "top: 3.13%; right: 44.63%",
+              state: "",
               color: "background-color: #193B94;"
             },
           ],
@@ -363,6 +347,7 @@ export const structure: structureModel = {
               style_three: "top: 5.5%; right: 27.75% ;",
               style_four: "top: 6.2%; right: 27.2%;",
               style_five: "top: 7.8%; right: 27.8%;",
+              state: "",
               color: "background-color: #193B94;"
             },
             {
@@ -377,6 +362,7 @@ export const structure: structureModel = {
               style_three: "top: 2.5%; right: 35.2%;",
               style_four: "top: 4%; right: 32.5%;",
               style_five: "top: 3.38%; right: 30.75%;",
+              state: "",
               color: "background-color: #193B94;"
             },
             {
@@ -391,6 +377,7 @@ export const structure: structureModel = {
               style_three: "top: 1.5%; right: 42.4%",
               style_four: "top: 2.2%; right: 38.2%;",
               style_five: "top: 4.8%; right: 35.75%;",
+              state: "",
               color: "background-color: #193B94;"
             },
             {
@@ -405,6 +392,7 @@ export const structure: structureModel = {
               style_three: "",
               style_four: "top: 1.4%; right: 44%",
               style_five: "top: 1.3%; right: 39.63%;",
+              state: "",
               color: "background-color: #193B94;"
             },
             {
@@ -419,6 +407,7 @@ export const structure: structureModel = {
               style_three: "",
               style_four: "",
               style_five: "top: 3.13%; right: 44.63%",
+              state: "",
               color: "background-color: #193B94;"
             }
           ],
@@ -433,7 +422,7 @@ export const structure: structureModel = {
           count: 0,
           spells: [
             {
-              id: 31,
+              id: 1,
               spell_id: "",
               name: "",
               description: "",
@@ -442,10 +431,11 @@ export const structure: structureModel = {
               style_three: "",
               style_four: "",
               style_five: "",
+              state: "",
               color: "background-color: #94198E;"
             },
             {
-              id: 32,
+              id: 2,
               spell_id: "",
               name: "",
               description: "",
@@ -454,10 +444,11 @@ export const structure: structureModel = {
               style_three: "",
               style_four: "",
               style_five: "",
+              state: "",
               color: "background-color: #94198E;"
             },
             {
-              id: 33,
+              id: 3,
               spell_id: "",
               name: "",
               description: "",
@@ -466,6 +457,7 @@ export const structure: structureModel = {
               style_three: "",
               style_four: "",
               style_five: "",
+              state: "",
               color: "background-color: #94198E;"
             },
           ],
@@ -475,7 +467,7 @@ export const structure: structureModel = {
           count: 0,
           spells: [
             {
-              id: 34,
+              id: 1,
               spell_id: "",
               name: "",
               description: "",
@@ -484,10 +476,11 @@ export const structure: structureModel = {
               style_three: "top: 20.7%; right: 10%",
               style_four: "top: 9.8%; right: 21.5%",
               style_five: "top: 22.8%; right: 10.8%;",
+              state: "",
               color: "background-color: #193B94;"
             },
             {
-              id: 35,
+              id: 2,
               spell_id: "",
               name: "",
               description: "",
@@ -496,10 +489,11 @@ export const structure: structureModel = {
               style_three: "top: 15%; right: 14.5%;",
               style_four: "top: 13%; right: 17%;",
               style_five: "top: 17.7%; right: 11.3%;",
+              state: "",
               color: "background-color: #193B94;"
             },
             {
-              id: 36,
+              id: 3,
               spell_id: "",
               name: "",
               description: "",
@@ -508,10 +502,11 @@ export const structure: structureModel = {
               style_three: "top: 10%; right: 20%;",
               style_four: "top: 17%; right: 13%;",
               style_five: "top: 16%; right: 16.2%;",
+              state: "",
               color: "background-color: #193B94;"
             },
             {
-              id: 36,
+              id: 4,
               spell_id: "",
               name: "",
               description: "",
@@ -520,10 +515,11 @@ export const structure: structureModel = {
               style_three: "",
               style_four: "top: 22%; right: 10.2%;",
               style_five: "top: 11.1%; right: 17.7%;",
+              state: "",
               color: "background-color: #193B94;"
             },
             {
-              id: 36,
+              id: 5,
               spell_id: "",
               name: "",
               description: "",
@@ -532,6 +528,7 @@ export const structure: structureModel = {
               style_three: "",
               style_four: "",
               style_five: "top: 10.7%; right: 23%",
+              state: "",
               color: "background-color: #193B94;"
             },
           ],
@@ -541,7 +538,7 @@ export const structure: structureModel = {
           count: 0,
           spells: [
             {
-              id: 34,
+              id: 1,
               spell_id: "",
               name: "",
               description: "",
@@ -552,10 +549,11 @@ export const structure: structureModel = {
               style_three: "top: 20.7%; right: 10%",
               style_four: "top: 9.8%; right: 21.5%",
               style_five: "top: 22.8%; right: 10.8%;",
+              state: "",
               color: "background-color: #193B94;"
             },
             {
-              id: 35,
+              id: 2,
               spell_id: "",
               name: "",
               description: "",
@@ -566,10 +564,11 @@ export const structure: structureModel = {
               style_three: "top: 15%; right: 14.5%;",
               style_four: "top: 13%; right: 17%;",
               style_five: "top: 17.7%; right: 11.3%;",
+              state: "",
               color: "background-color: #193B94;"
             },
             {
-              id: 36,
+              id: 3,
               spell_id: "",
               name: "",
               description: "",
@@ -580,10 +579,11 @@ export const structure: structureModel = {
               style_three: "top: 10%; right: 20%;",
               style_four: "top: 17%; right: 13%;",
               style_five: "top: 16%; right: 16.2%;",
+              state: "",
               color: "background-color: #193B94;"
             },
             {
-              id: 36,
+              id: 4,
               spell_id: "",
               name: "",
               description: "",
@@ -594,10 +594,11 @@ export const structure: structureModel = {
               style_three: "",
               style_four: "top: 22%; right: 10.2%;",
               style_five: "top: 11.1%; right: 17.7%;",
+              state: "",
               color: "background-color: #193B94;"
             },
             {
-              id: 36,
+              id: 5,
               spell_id: "",
               name: "",
               description: "",
@@ -608,6 +609,7 @@ export const structure: structureModel = {
               style_three: "",
               style_four: "",
               style_five: "top: 10.7%; right: 23%",
+              state: "",
               color: "background-color: #193B94;"
             }
           ],
@@ -628,6 +630,7 @@ export const structure: structureModel = {
               style_three: "top: 20.7%; right: 10%",
               style_four: "top: 9.8%; right: 21.5%",
               style_five: "top: 22.8%; right: 10.8%;",
+              state: "",
               color: "background-color: #193B94;"
             },
             {
@@ -642,6 +645,7 @@ export const structure: structureModel = {
               style_three: "top: 15%; right: 14.5%;",
               style_four: "top: 13%; right: 17%;",
               style_five: "top: 17.7%; right: 11.3%;",
+              state: "",
               color: "background-color: #193B94;"
             },
             {
@@ -656,6 +660,7 @@ export const structure: structureModel = {
               style_three: "top: 10%; right: 20%;",
               style_four: "top: 17%; right: 13%;",
               style_five: "top: 16%; right: 16.2%;",
+              state: "",
               color: "background-color: #193B94;"
             },
             {
@@ -670,6 +675,7 @@ export const structure: structureModel = {
               style_three: "",
               style_four: "top: 22%; right: 10.2%;",
               style_five: "top: 11.1%; right: 17.7%;",
+              state: "",
               color: "background-color: #193B94;"
             },
             {
@@ -684,6 +690,7 @@ export const structure: structureModel = {
               style_three: "",
               style_four: "",
               style_five: "top: 10.7%; right: 23%",
+              state: "",
               color: "background-color: #193B94;"
             },
           ],
@@ -698,7 +705,7 @@ export const structure: structureModel = {
           count: 0,
           spells: [
             {
-              id: 7,
+              id: 1,
               spell_id: "",
               name: "",
               description: "",
@@ -707,10 +714,11 @@ export const structure: structureModel = {
               style_three: "",
               style_four: "",
               style_five: "",
+              state: "",
               color: "background-color: #199434;"
             },
             {
-              id: 8,
+              id: 2,
               spell_id: "",
               name: "",
               description: "",
@@ -719,10 +727,11 @@ export const structure: structureModel = {
               style_three: "",
               style_four: "",
               style_five: "",
+              state: "",
               color: "background-color: #199434;"
             },
             {
-              id: 9,
+              id: 3,
               spell_id: "",
               name: "",
               description: "",
@@ -731,6 +740,7 @@ export const structure: structureModel = {
               style_three: "",
               style_four: "",
               style_five: "",
+              state: "",
               color: "background-color: #199434;"
             },
           ],
@@ -749,6 +759,7 @@ export const structure: structureModel = {
               style_three: "top: 42.5%; right: 2%;",
               style_four: "top: 43.8%; right: 2.2%;",
               style_five: "top: 44.8%; right: 3.5%",
+              state: "",
               color: "background-color: #193B94;"
             },
             {
@@ -761,6 +772,7 @@ export const structure: structureModel = {
               style_three: "top: 35%; right: 3%;",
               style_four: "top: 38.2%; right: 3%;",
               style_five: "top: 40.1%; right: 1.1%;",
+              state: "",
               color: "background-color: #193B94;"
             },
             {
@@ -773,6 +785,7 @@ export const structure: structureModel = {
               style_three: "top: 28%; right: 5.5%",
               style_four: "top: 32.8%; right: 4.5%;",
               style_five: "top: 36.3%; right: 4.95%;",
+              state: "",
               color: "background-color: #193B94;"
             },
             {
@@ -785,6 +798,7 @@ export const structure: structureModel = {
               style_three: "",
               style_four: "top: 27.8%; right: 6.5%",
               style_five: "top: 31.3%; right: 3.63%;",
+              state: "",
               color: "background-color: #193B94;"
             },
             {
@@ -797,6 +811,7 @@ export const structure: structureModel = {
               style_three: "",
               style_four: "",
               style_five: "top: 28%; right: 7.7%",
+              state: "",
               color: "background-color: #193B94;"
             }
           ],
@@ -817,6 +832,7 @@ export const structure: structureModel = {
               style_three: "top: 42.5%; right: 2%;",
               style_four: "top: 43.8%; right: 2.2%;",
               style_five: "top: 44.8%; right: 3.5%;",
+              state: "",
               color: "background-color: #193B94;"
             },
             {
@@ -831,6 +847,7 @@ export const structure: structureModel = {
               style_three: "top: 35%; right: 3%;",
               style_four: "top: 38.2%; right: 3%;",
               style_five: "top: 40.1%; right: 1.1%;",
+              state: "",
               color: "background-color: #193B94;"
             },
             {
@@ -845,6 +862,7 @@ export const structure: structureModel = {
               style_three: "top: 28%; right: 5.5%",
               style_four: "top: 32.8%; right: 4.5%;",
               style_five: "top: 36.3%; right: 4.95%;",
+              state: "",
               color: "background-color: #193B94;"
             },
             {
@@ -859,6 +877,7 @@ export const structure: structureModel = {
               style_three: "",
               style_four: "top: 27.8%; right: 6.5%",
               style_five: "top: 31.3%; right: 3.63%;",
+              state: "",
               color: "background-color: #193B94;"
             },
             {
@@ -873,6 +892,7 @@ export const structure: structureModel = {
               style_three: "",
               style_four: "",
               style_five: "top: 28%; right: 7.7%",
+              state: "",
               color: "background-color: #193B94;"
             },
           ],
@@ -893,6 +913,7 @@ export const structure: structureModel = {
               style_three: "top: 42.5%; right: 2%;",
               style_four: "top: 43.8%; right: 2.2%;",
               style_five: "top: 44.8%; right: 3.5%",
+              state: "",
               color: "background-color: #193B94;"
             },
             {
@@ -907,6 +928,7 @@ export const structure: structureModel = {
               style_three: "top: 35%; right: 3%;",
               style_four: "top: 38.2%; right: 3%;",
               style_five: "top: 40.1%; right: 1.1%;",
+              state: "",
               color: "background-color: #193B94;"
             },
             {
@@ -921,6 +943,7 @@ export const structure: structureModel = {
               style_three: "top: 28%; right: 5.5%",
               style_four: "top: 32.8%; right: 4.5%;",
               style_five: "top: 36.3%; right: 4.95%;",
+              state: "",
               color: "background-color: #193B94;"
             },
             {
@@ -935,6 +958,7 @@ export const structure: structureModel = {
               style_three: "",
               style_four: "top: 27.8%; right: 6.5%",
               style_five: "top: 31.3%; right: 3.63%;",
+              state: "",
               color: "background-color: #193B94;"
             },
             {
@@ -949,6 +973,7 @@ export const structure: structureModel = {
               style_three: "",
               style_four: "",
               style_five: "top: 28%; right: 7.7%",
+              state: "",
               color: "background-color: #193B94;"
             },
           ],
@@ -963,7 +988,7 @@ export const structure: structureModel = {
           count: 0,
           spells: [
             {
-              id: 10,
+              id: 1,
               spell_id: "",
               name: "",
               description: "",
@@ -972,10 +997,11 @@ export const structure: structureModel = {
               style_three: "",
               style_four: "",
               style_five: "",
+              state: "",
               color: "background-color: #941D19;"
             },
             {
-              id: 11,
+              id: 2,
               spell_id: "",
               name: "",
               description: "",
@@ -984,10 +1010,11 @@ export const structure: structureModel = {
               style_three: "",
               style_four: "",
               style_five: "",
+              state: "",
               color: "background-color: #941D19;"
             },
             {
-              id: 12,
+              id: 3,
               spell_id: "",
               name: "",
               description: "",
@@ -996,6 +1023,7 @@ export const structure: structureModel = {
               style_three: "",
               style_four: "",
               style_five: "",
+              state: "",
               color: "background-color: #941D19;"
             },
           ],
@@ -1005,7 +1033,7 @@ export const structure: structureModel = {
           count: 0,
           spells: [
             {
-              id: 34,
+              id: 1,
               spell_id: "",
               name: "",
               description: "",
@@ -1014,10 +1042,11 @@ export const structure: structureModel = {
               style_three: "bottom: 28%; right: 5.5%",
               style_four: "bottom: 27.8%; right: 6.5%",
               style_five: "bottom: 28%; right: 7.7%",
+              state: "",
               color: "background-color: #193B94;"
             },
             {
-              id: 35,
+              id: 2,
               spell_id: "",
               name: "",
               description: "",
@@ -1026,10 +1055,11 @@ export const structure: structureModel = {
               style_three: "bottom: 35%; right: 3%;",
               style_four: "bottom: 32.8%; right: 4.5%;",
               style_five: "bottom: 31.3%; right: 3.63%;",
+              state: "",
               color: "background-color: #193B94;"
             },
             {
-              id: 36,
+              id: 3,
               spell_id: "",
               name: "",
               description: "",
@@ -1038,10 +1068,11 @@ export const structure: structureModel = {
               style_three: "bottom: 42.5%; right: 2%;",
               style_four: "bottom: 38.2%; right: 3%;",
               style_five: "bottom: 36.3%; right: 4.95%;",
+              state: "",
               color: "background-color: #193B94;"
             },
             {
-              id: 35,
+              id: 4,
               spell_id: "",
               name: "",
               description: "",
@@ -1050,10 +1081,11 @@ export const structure: structureModel = {
               style_three: "",
               style_four: "bottom: 43.8%; right: 2.2%;",
               style_five: "bottom: 40.1%; right: 1.1%;",
+              state: "",
               color: "background-color: #193B94;"
             },
             {
-              id: 36,
+              id: 5,
               spell_id: "",
               name: "",
               description: "",
@@ -1062,6 +1094,7 @@ export const structure: structureModel = {
               style_three: "",
               style_four: "",
               style_five: "bottom: 44.8%; right: 3.5%",
+              state: "",
               color: "background-color: #193B94;"
             }
           ],
@@ -1082,6 +1115,7 @@ export const structure: structureModel = {
               style_three: "bottom: 28%; right: 5.5%",
               style_four: "bottom: 27.8%; right: 6.5%",
               style_five: "bottom: 28%; right: 7.7%",
+              state: "",
               color: "background-color: #193B94;"
             },
             {
@@ -1096,6 +1130,7 @@ export const structure: structureModel = {
               style_three: "bottom: 35%; right: 3%;",
               style_four: "bottom: 32.8%; right: 4.5%;",
               style_five: "bottom: 31.3%; right: 3.63%;",
+              state: "",
               color: "background-color: #193B94;"
             },
             {
@@ -1110,6 +1145,7 @@ export const structure: structureModel = {
               style_three: "bottom: 42.5%; right: 2%;",
               style_four: "bottom: 38.2%; right: 3%;",
               style_five: "bottom: 36.3%; right: 4.95%;",
+              state: "",
               color: "background-color: #193B94;"
             },
             {
@@ -1124,6 +1160,7 @@ export const structure: structureModel = {
               style_three: "",
               style_four: "bottom: 43.8%; right: 2.2%;",
               style_five: "bottom: 40.1%; right: 1.1%;",
+              state: "",
               color: "background-color: #193B94;"
             },
             {
@@ -1138,6 +1175,7 @@ export const structure: structureModel = {
               style_three: "",
               style_four: "",
               style_five: "bottom: 44.8%; right: 3.5%",
+              state: "",
               color: "background-color: #193B94;"
             }
           ],
@@ -1158,6 +1196,7 @@ export const structure: structureModel = {
               style_three: "bottom: 28%; right: 5.5%",
               style_four: "bottom: 27.8%; right: 6.5%",
               style_five: "bottom: 28%; right: 7.7%",
+              state: "",
               color: "background-color: #193B94;"
             },
             {
@@ -1172,6 +1211,7 @@ export const structure: structureModel = {
               style_three: "bottom: 35%; right: 3%;",
               style_four: "bottom: 32.8%; right: 4.5%;",
               style_five: "bottom: 31.3%; right: 3.63%;",
+              state: "",
               color: "background-color: #193B94;"
             },
             {
@@ -1186,6 +1226,7 @@ export const structure: structureModel = {
               style_three: "bottom: 42.5%; right: 2%;",
               style_four: "bottom: 38.2%; right: 3%;",
               style_five: "bottom: 36.3%; right: 4.95%;",
+              state: "",
               color: "background-color: #193B94;"
             },
             {
@@ -1200,6 +1241,7 @@ export const structure: structureModel = {
               style_three: "",
               style_four: "bottom: 43.8%; right: 2.2%;",
               style_five: "bottom: 40.1%; right: 1.1%;",
+              state: "",
               color: "background-color: #193B94;"
             },
             {
@@ -1214,6 +1256,7 @@ export const structure: structureModel = {
               style_three: "",
               style_four: "",
               style_five: "bottom: 44.8%; right: 3.5%",
+              state: "",
               color: "background-color: #193B94;"
             },
           ],
@@ -1228,7 +1271,7 @@ export const structure: structureModel = {
           count: 0,
           spells: [
             {
-              id: 13,
+              id: 1,
               spell_id: "",
               name: "",
               description: "",
@@ -1237,10 +1280,11 @@ export const structure: structureModel = {
               style_three: "",
               style_four: "",
               style_five: "",
+              state: "",
               color: "background-color: #944E19;"
             },
             {
-              id: 14,
+              id: 2,
               spell_id: "",
               name: "",
               description: "",
@@ -1249,10 +1293,11 @@ export const structure: structureModel = {
               style_three: "",
               style_four: "",
               style_five: "",
+              state: "",
               color: "background-color: #944E19;"
             },
             {
-              id: 15,
+              id: 3,
               spell_id: "",
               name: "",
               description: "",
@@ -1261,6 +1306,7 @@ export const structure: structureModel = {
               style_three: "",
               style_four: "",
               style_five: "",
+              state: "",
               color: "background-color: #944E19;"
             },
           ],
@@ -1270,7 +1316,7 @@ export const structure: structureModel = {
           count: 0,
           spells: [
             {
-              id: 34,
+              id: 1,
               spell_id: "",
               name: "",
               description: "",
@@ -1279,10 +1325,11 @@ export const structure: structureModel = {
               style_three: "bottom: 10%; right: 20%;",
               style_four: "bottom: 9.8%; right: 21.5%",
               style_five: "bottom: 10.7%; right: 23%",
+              state: "",
               color: "background-color: #193B94;"
             },
             {
-              id: 35,
+              id: 2,
               spell_id: "",
               name: "",
               description: "",
@@ -1291,10 +1338,11 @@ export const structure: structureModel = {
               style_three: "bottom: 15%; right: 14.5%;",
               style_four: "bottom: 13%; right: 17%;",
               style_five: "bottom: 11.1%; right: 17.7%;",
+              state: "",
               color: "background-color: #193B94;"
             },
             {
-              id: 36,
+              id: 3,
               spell_id: "",
               name: "",
               description: "",
@@ -1303,10 +1351,11 @@ export const structure: structureModel = {
               style_three: "bottom: 20.7%; right: 10%",
               style_four: "bottom: 17%; right: 13%;",
               style_five: "bottom: 16%; right: 16.2%;",
+              state: "",
               color: "background-color: #193B94;"
             },
             {
-              id: 35,
+              id: 4,
               spell_id: "",
               name: "",
               description: "",
@@ -1315,10 +1364,11 @@ export const structure: structureModel = {
               style_three: "",
               style_four: "bottom: 22%; right: 10.2%;",
               style_five: "bottom: 17.7%; right: 11.3%;",
+              state: "",
               color: "background-color: #193B94;"
             },
             {
-              id: 36,
+              id: 5,
               spell_id: "",
               name: "",
               description: "",
@@ -1327,6 +1377,7 @@ export const structure: structureModel = {
               style_three: "",
               style_four: "",
               style_five: "bottom: 22.8%; right: 10.8%;",
+              state: "",
               color: "background-color: #193B94;"
             }
           ],
@@ -1336,7 +1387,7 @@ export const structure: structureModel = {
           count: 0,
           spells: [
             {
-              id: 34,
+              id: 1,
               spell_id: "",
               name: "",
               description: "",
@@ -1347,10 +1398,11 @@ export const structure: structureModel = {
               style_three: "bottom: 10%; right: 20%;",
               style_four: "bottom: 9.8%; right: 21.5%",
               style_five: "bottom: 10.7%; right: 23",
+              state: "",
               color: "background-color: #193B94;"
             },
             {
-              id: 35,
+              id: 2,
               spell_id: "",
               name: "",
               description: "",
@@ -1361,10 +1413,11 @@ export const structure: structureModel = {
               style_three: "bottom: 15%; right: 14.5%;",
               style_four: "bottom: 13%; right: 17%;",
               style_five: "bottom: 11.1%; right: 17.7%;",
+              state: "",
               color: "background-color: #193B94;"
             },
             {
-              id: 36,
+              id: 3,
               spell_id: "",
               name: "",
               description: "",
@@ -1375,10 +1428,11 @@ export const structure: structureModel = {
               style_three: "bottom: 20.7%; right: 10%",
               style_four: "bottom: 17%; right: 13%;",
               style_five: "bottom: 16%; right: 16.2%;",
+              state: "",
               color: "background-color: #193B94;"
             },
             {
-              id: 36,
+              id: 4,
               spell_id: "",
               name: "",
               description: "",
@@ -1389,10 +1443,11 @@ export const structure: structureModel = {
               style_three: "",
               style_four: "bottom: 22%; right: 10.2%;",
               style_five: "bottom: 17.7%; right: 11.3%;",
+              state: "",
               color: "background-color: #193B94;"
             },
             {
-              id: 36,
+              id: 5,
               spell_id: "",
               name: "",
               description: "",
@@ -1403,6 +1458,7 @@ export const structure: structureModel = {
               style_three: "",
               style_four: "",
               style_five: "bottom: 22.8%; right: 10.8%;",
+              state: "",
               color: "background-color: #193B94;"
             },
           ],
@@ -1423,6 +1479,7 @@ export const structure: structureModel = {
               style_three: "bottom: 10%; right: 20%;",
               style_four: "bottom: 9.8%; right: 21.5%",
               style_five: "bottom: 10.7%; right: 23%",
+              state: "",
               color: "background-color: #193B94;"
             },
             {
@@ -1437,6 +1494,7 @@ export const structure: structureModel = {
               style_three: "bottom: 15%; right: 14.5%;",
               style_four: "bottom: 13%; right: 17%;",
               style_five: "bottom: 11.1%; right: 17.7%;",
+              state: "",
               color: "background-color: #193B94;"
             },
             {
@@ -1451,6 +1509,7 @@ export const structure: structureModel = {
               style_three: "bottom: 20.7%; right: 10%",
               style_four: "bottom: 17%; right: 13%;",
               style_five: "bottom: 16%; right: 16.2%;",
+              state: "",
               color: "background-color: #193B94;"
             },
             {
@@ -1465,6 +1524,7 @@ export const structure: structureModel = {
               style_three: "",
               style_four: "bottom: 22%; right: 10.2%;",
               style_five: "bottom: 17.7%; right: 11.3%;",
+              state: "",
               color: "background-color: #193B94;"
             },
             {
@@ -1479,6 +1539,7 @@ export const structure: structureModel = {
               style_three: "",
               style_four: "",
               style_five: "bottom: 22.8%; right: 10.8%;",
+              state: "",
               color: "background-color: #193B94;"
             },
           ],
@@ -1493,7 +1554,7 @@ export const structure: structureModel = {
           count: 0,
           spells: [
             {
-              id: 16,
+              id: 1,
               spell_id: "",
               name: "",
               description: "",
@@ -1502,10 +1563,11 @@ export const structure: structureModel = {
               style_three: "",
               style_four: "",
               style_five: "",
+              state: "",
               color: "background-color: #659419;"
             },
             {
-              id: 17,
+              id: 2,
               spell_id: "",
               name: "",
               description: "",
@@ -1514,10 +1576,11 @@ export const structure: structureModel = {
               style_three: "",
               style_four: "",
               style_five: "",
+              state: "",
               color: "background-color: #659419;"
             },
             {
-              id: 18,
+              id: 3,
               spell_id: "",
               name: "",
               description: "",
@@ -1526,6 +1589,7 @@ export const structure: structureModel = {
               style_three: "",
               style_four: "",
               style_five: "",
+              state: "",
               color: "background-color: #659419;"
             },
           ],
@@ -1544,6 +1608,7 @@ export const structure: structureModel = {
               style_three: "bottom: 1.5%; right: 42.4%",
               style_four: "bottom: 1.4%; right: 44%",
               style_five: "bottom: 3.13%; right: 44.63%",
+              state: "",
               color: "background-color: #193B94;"
             },
             {
@@ -1556,6 +1621,7 @@ export const structure: structureModel = {
               style_three: "bottom: 2.9%; right: 34.8%;",
               style_four: "bottom: 2.2%; right: 38.2%;",
               style_five: "bottom: 1.3%; right: 39.63%;",
+              state: "",
               color: "background-color: #193B94;"
             },
             {
@@ -1568,6 +1634,7 @@ export const structure: structureModel = {
               style_three: "bottom: 5.5%; right: 27.75%;",
               style_four: "bottom: 4%; right: 32.5%;",
               style_five: "bottom: 4.8%; right: 35.75%;",
+              state: "",
               color: "background-color: #193B94;"
             },
             {
@@ -1580,6 +1647,7 @@ export const structure: structureModel = {
               style_three: "",
               style_four: "bottom: 6.2%; right: 27.2%;",
               style_five: "bottom: 3.38%; right: 30.75%;",
+              state: "",
               color: "background-color: #193B94;"
             },
             {
@@ -1592,6 +1660,7 @@ export const structure: structureModel = {
               style_three: "",
               style_four: "",
               style_five: "bottom: 7.8%; right: 27.8%;",
+              state: "",
               color: "background-color: #193B94;"
             }
           ],
@@ -1612,6 +1681,7 @@ export const structure: structureModel = {
               style_three: "bottom: 1.5%; right: 42.4%",
               style_four: "bottom: 1.4%; right: 44%",
               style_five: "bottom: 3.13%; right: 44.63%",
+              state: "",
               color: "background-color: #193B94;"
             },
             {
@@ -1626,6 +1696,7 @@ export const structure: structureModel = {
               style_three: "bottom: 2.9%; right: 34.8%;",
               style_four: "bottom: 2.2%; right: 38.2%;",
               style_five: "bottom: 1.3%; right: 39.63%;",
+              state: "",
               color: "background-color: #193B94;"
             },
             {
@@ -1640,6 +1711,7 @@ export const structure: structureModel = {
               style_three: "bottom: 5.5%; right: 27.75%;",
               style_four: "bottom: 4%; right: 32.5%;",
               style_five: "bottom: 4.8%; right: 35.75%;",
+              state: "",
               color: "background-color: #193B94;"
             },
             {
@@ -1654,6 +1726,7 @@ export const structure: structureModel = {
               style_three: "",
               style_four: "bottom: 6.2%; right: 27.2%;",
               style_five: "bottom: 3.38%; right: 30.75%;",
+              state: "",
               color: "background-color: #193B94;"
             },
             {
@@ -1668,6 +1741,7 @@ export const structure: structureModel = {
               style_three: "",
               style_four: "",
               style_five: "bottom: 7.8%; right: 27.8%;",
+              state: "",
               color: "background-color: #193B94;"
             },
           ],
@@ -1688,6 +1762,7 @@ export const structure: structureModel = {
               style_three: "bottom: 1.5%; right: 42.4%",
               style_four: "bottom: 1.4%; right: 44%",
               style_five: "bottom: 3.13%; right: 44.63%",
+              state: "",
               color: "background-color: #193B94;"
             },
             {
@@ -1702,6 +1777,7 @@ export const structure: structureModel = {
               style_three: "bottom: 2.9%; right: 34.8%;",
               style_four: "bottom: 2.2%; right: 38.2%;",
               style_five: "bottom: 1.3%; right: 39.63%;",
+              state: "",
               color: "background-color: #193B94;"
             },
             {
@@ -1716,6 +1792,7 @@ export const structure: structureModel = {
               style_three: "bottom: 5.5%; right: 27.75%;",
               style_four: "bottom: 4%; right: 32.5%;",
               style_five: "bottom: 4.8%; right: 35.75%;",
+              state: "",
               color: "background-color: #193B94;"
             },
             {
@@ -1730,6 +1807,7 @@ export const structure: structureModel = {
               style_three: "",
               style_four: "bottom: 6.2%; right: 27.2%;",
               style_five: "bottom: 3.38%; right: 30.75%;",
+              state: "",
               color: "background-color: #193B94;"
             },
             {
@@ -1744,6 +1822,7 @@ export const structure: structureModel = {
               style_three: "",
               style_four: "",
               style_five: "bottom: 7.8%; right: 27.8%;",
+              state: "",
               color: "background-color: #193B94;"
             },
           ],
@@ -1758,7 +1837,7 @@ export const structure: structureModel = {
           count: 0,
           spells: [
             {
-              id: 19,
+              id: 1,
               spell_id: "",
               name: "",
               description: "",
@@ -1767,10 +1846,11 @@ export const structure: structureModel = {
               style_three: "",
               style_four: "",
               style_five: "",
+              state: "",
               color: "background-color: #6276AB;"
             },
             {
-              id: 20,
+              id: 2,
               spell_id: "",
               name: "",
               description: "",
@@ -1779,10 +1859,11 @@ export const structure: structureModel = {
               style_three: "",
               style_four: "",
               style_five: "",
+              state: "",
               color: "background-color: #6276AB;"
             },
             {
-              id: 21,
+              id: 3,
               spell_id: "",
               name: "",
               description: "",
@@ -1791,6 +1872,7 @@ export const structure: structureModel = {
               style_three: "",
               style_four: "",
               style_five: "",
+              state: "",
               color: "background-color: #6276AB;"
             },
           ],
@@ -1809,6 +1891,7 @@ export const structure: structureModel = {
               style_three: "bottom: 5.5%; left: 27.75% ;",
               style_four: "bottom: 6.2%; left: 27.2%;",
               style_five: "bottom: 7.8%; left: 27.8%;",
+              state: "",
               color: "background-color: #193B94;"
             },
             {
@@ -1821,6 +1904,7 @@ export const structure: structureModel = {
               style_three: "bottom: 2.9%; left: 34.8%;",
               style_four: "bottom: 4%; left: 32.5%;",
               style_five: "bottom: 3.38%; left: 30.75%;",
+              state: "",
               color: "background-color: #193B94;"
             },
             {
@@ -1833,6 +1917,7 @@ export const structure: structureModel = {
               style_three: "bottom: 1.5%; left: 42.4%",
               style_four: "bottom: 2.2%; left: 38.2%;",
               style_five: "bottom: 4.8%; left: 35.75%;",
+              state: "",
               color: "background-color: #193B94;"
             },
             {
@@ -1845,6 +1930,7 @@ export const structure: structureModel = {
               style_three: "",
               style_four: "bottom: 1.4%; left: 44%",
               style_five: "bottom: 1.3%; left: 39.63%;",
+              state: "",
               color: "background-color: #193B94;"
             },
             {
@@ -1857,6 +1943,7 @@ export const structure: structureModel = {
               style_three: "",
               style_four: "",
               style_five: "bottom: 3.13%; left: 44.63%",
+              state: "",
               color: "background-color: #193B94;"
             }
           ],
@@ -1877,6 +1964,7 @@ export const structure: structureModel = {
               style_three: "bottom: 5.5%; left: 27.75% ;",
               style_four: "bottom: 6.2%; left: 27.2%;",
               style_five: "bottom: 7.8%; left: 27.8%;",
+              state: "",
               color: "background-color: #193B94;"
             },
             {
@@ -1891,6 +1979,7 @@ export const structure: structureModel = {
               style_three: "bottom: 2.9%; left: 34.8%;",
               style_four: "bottom: 4%; left: 32.5%;",
               style_five: "bottom: 3.38%; left: 30.75%;",
+              state: "",
               color: "background-color: #193B94;"
             },
             {
@@ -1905,6 +1994,7 @@ export const structure: structureModel = {
               style_three: "bottom: 1.5%; left: 42.4%",
               style_four: "bottom: 2.2%; left: 38.2%;",
               style_five: "bottom: 4.8%; left: 35.75%;",
+              state: "",
               color: "background-color: #193B94;"
             },
             {
@@ -1919,6 +2009,7 @@ export const structure: structureModel = {
               style_three: "",
               style_four: "bottom: 1.4%; left: 44%",
               style_five: "bottom: 1.3%; left: 39.63%;",
+              state: "",
               color: "background-color: #193B94;"
             },
             {
@@ -1933,6 +2024,7 @@ export const structure: structureModel = {
               style_three: "",
               style_four: "",
               style_five: "bottom: 3.13%; left: 44.63%",
+              state: "",
               color: "background-color: #193B94;"
             },
           ],
@@ -1953,6 +2045,7 @@ export const structure: structureModel = {
               style_three: "bottom: 5.5%; left: 27.75% ;",
               style_four: "bottom: 6.2%; left: 27.2%;",
               style_five: "bottom: 7.8%; left: 27.8%;",
+              state: "",
               color: "background-color: #193B94;"
             },
             {
@@ -1967,6 +2060,7 @@ export const structure: structureModel = {
               style_three: "bottom: 2.9%; left: 34.8%;",
               style_four: "bottom: 4%; left: 32.5%;",
               style_five: "bottom: 3.38%; left: 30.75%;",
+              state: "",
               color: "background-color: #193B94;"
             },
             {
@@ -1981,6 +2075,7 @@ export const structure: structureModel = {
               style_three: "bottom: 1.5%; left: 42.4%",
               style_four: "bottom: 2.2%; left: 38.2%;",
               style_five: "bottom: 4.8%; left: 35.75%;",
+              state: "",
               color: "background-color: #193B94;"
             },
             {
@@ -1995,6 +2090,7 @@ export const structure: structureModel = {
               style_three: "",
               style_four: "bottom: 1.4%; left: 44%",
               style_five: "bottom: 1.3%; left: 39.63%;",
+              state: "",
               color: "background-color: #193B94;"
             },
             {
@@ -2009,6 +2105,7 @@ export const structure: structureModel = {
               style_three: "",
               style_four: "",
               style_five: "bottom: 3.13%; left: 44.63%",
+              state: "",
               color: "background-color: #193B94;"
             },
           ],
@@ -2023,7 +2120,7 @@ export const structure: structureModel = {
           count: 0,
           spells: [
             {
-              id: 22,
+              id: 1,
               spell_id: "",
               name: "",
               description: "",
@@ -2032,10 +2129,11 @@ export const structure: structureModel = {
               style_three: "",
               style_four: "",
               style_five: "",
+              state: "",
               color: "background-color: #83FFFB;"
             },
             {
-              id: 23,
+              id: 2,
               spell_id: "",
               name: "",
               description: "",
@@ -2044,10 +2142,11 @@ export const structure: structureModel = {
               style_three: "",
               style_four: "",
               style_five: "",
+              state: "",
               color: "background-color: #83FFFB;"
             },
             {
-              id: 24,
+              id: 3,
               spell_id: "",
               name: "",
               description: "",
@@ -2056,6 +2155,7 @@ export const structure: structureModel = {
               style_three: "",
               style_four: "",
               style_five: "",
+              state: "",
               color: "background-color: #83FFFB;"
             },
           ],
@@ -2074,6 +2174,7 @@ export const structure: structureModel = {
               style_three: "bottom: 20.7%; left: 10%;",
               style_four: "bottom: 22%; left: 10.2%;",
               style_five: "bottom: 22.8%; left: 10.8%;",
+              state: "",
               color: "background-color: #193B94;"
             },
             {
@@ -2086,6 +2187,7 @@ export const structure: structureModel = {
               style_three: "bottom: 15%; left: 14.5%;",
               style_four: "bottom: 17%; left: 13%;",
               style_five: "bottom: 17.7%; left: 11.3%;",
+              state: "",
               color: "background-color: #193B94;"
             },
             {
@@ -2098,6 +2200,7 @@ export const structure: structureModel = {
               style_three: "bottom: 10%; left: 20%",
               style_four: "bottom: 13%; left: 17%;",
               style_five: "bottom: 16%; left: 16.2%;",
+              state: "",
               color: "background-color: #193B94;"
             },
             {
@@ -2110,6 +2213,7 @@ export const structure: structureModel = {
               style_three: "",
               style_four: "bottom: 9.8%; left: 21.5%",
               style_five: "bottom: 11.1%; left: 17.7%",
+              state: "",
               color: "background-color: #193B94;"
             },
             {
@@ -2122,6 +2226,7 @@ export const structure: structureModel = {
               style_three: "",
               style_four: "",
               style_five: "bottom: 10.7%; left: 23%",
+              state: "",
               color: "background-color: #193B94;"
             }
           ],
@@ -2142,6 +2247,7 @@ export const structure: structureModel = {
               style_three: "bottom: 20.7%; left: 10%;",
               style_four: "bottom: 22%; left: 10.2%;",
               style_five: "bottom: 22.8%; left: 10.8%;",
+              state: "",
               color: "background-color: #193B94;"
             },
             {
@@ -2156,6 +2262,7 @@ export const structure: structureModel = {
               style_three: "bottom: 15%; left: 14.5%;",
               style_four: "bottom: 17%; left: 13%;",
               style_five: "bottom: 17.7%; left: 11.3%;",
+              state: "",
               color: "background-color: #193B94;"
             },
             {
@@ -2170,6 +2277,7 @@ export const structure: structureModel = {
               style_three: "bottom: 10%; left: 20%",
               style_four: "bottom: 13%; left: 17%;",
               style_five: "bottom: 16%; left: 16.2%;",
+              state: "",
               color: "background-color: #193B94;"
             },
             {
@@ -2184,6 +2292,7 @@ export const structure: structureModel = {
               style_three: "",
               style_four: "bottom: 9.8%; left: 21.5%",
               style_five: "bottom: 11.1%; left: 17.7%;",
+              state: "",
               color: "background-color: #193B94;"
             },
             {
@@ -2196,6 +2305,7 @@ export const structure: structureModel = {
               style_three: "",
               style_four: "",
               style_five: "bottom: 10.7%; left: 23%",
+              state: "",
               color: "background-color: #193B94;"
             },
           ],
@@ -2216,6 +2326,7 @@ export const structure: structureModel = {
               style_three: "bottom: 20.7%; left: 10%;",
               style_four: "bottom: 22%; left: 10.2%;",
               style_five: "bottom: 22.8%; left: 10.8%;",
+              state: "",
               color: "background-color: #193B94;"
             },
             {
@@ -2230,6 +2341,7 @@ export const structure: structureModel = {
               style_three: "bottom: 15%; left: 14.5%;",
               style_four: "bottom: 13%; left: 17%;",
               style_five: "bottom: 16%; left: 16.2%;",
+              state: "",
               color: "background-color: #193B94;"
             },
             {
@@ -2244,6 +2356,7 @@ export const structure: structureModel = {
               style_three: "bottom: 10%; left: 20%",
               style_four: "bottom: 13%; left: 17%;",
               style_five: "bottom: 16%; left: 16.2%;",
+              state: "",
               color: "background-color: #193B94;"
             },
             {
@@ -2258,6 +2371,7 @@ export const structure: structureModel = {
               style_three: "",
               style_four: "bottom: 9.8%; left: 21.5%",
               style_five: "bottom: 11.1%; left: 17.7%;",
+              state: "",
               color: "background-color: #193B94;"
             },
             {
@@ -2272,6 +2386,7 @@ export const structure: structureModel = {
               style_three: "",
               style_four: "",
               style_five: "bottom: 10.7%; left: 23%",
+              state: "",
               color: "background-color: #193B94;"
             },
           ],
@@ -2286,7 +2401,7 @@ export const structure: structureModel = {
           count: 0,
           spells: [
             {
-              id: 25,
+              id: 1,
               spell_id: "",
               name: "",
               description: "",
@@ -2295,10 +2410,11 @@ export const structure: structureModel = {
               style_three: "",
               style_four: "",
               style_five: "",
+              state: "",
               color: "background-color: #6276AB;"
             },
             {
-              id: 26,
+              id: 2,
               spell_id: "",
               name: "",
               description: "",
@@ -2307,10 +2423,11 @@ export const structure: structureModel = {
               style_three: "",
               style_four: "",
               style_five: "",
+              state: "",
               color: "background-color: #6276AB;"
             },
             {
-              id: 27,
+              id: 3,
               spell_id: "",
               name: "",
               description: "",
@@ -2319,6 +2436,7 @@ export const structure: structureModel = {
               style_three: "",
               style_four: "",
               style_five: "",
+              state: "",
               color: "background-color: #6276AB;"
             },
           ],
@@ -2337,6 +2455,7 @@ export const structure: structureModel = {
               style_three: "bottom: 42.5%; left: 2%;",
               style_four: "bottom: 43.8%; left: 2.2%;",
               style_five: "bottom: 44.8%; left: 3.5%",
+              state: "",
               color: "background-color: #193B94;"
             },
             {
@@ -2349,6 +2468,7 @@ export const structure: structureModel = {
               style_three: "bottom: 35%; left: 3%;",
               style_four: "bottom: 38.2%; left: 3%;",
               style_five: "bottom: 40.1%; left: 1.1%;",
+              state: "",
               color: "background-color: #193B94;"
             },
             {
@@ -2361,6 +2481,7 @@ export const structure: structureModel = {
               style_three: "bottom: 28%; left: 5.5%;",
               style_four: "bottom: 32.8%; left: 4.5%;",
               style_five: "bottom: 36.3%; left: 4.95%;",
+              state: "",
               color: "background-color: #193B94;"
             },
             {
@@ -2373,6 +2494,7 @@ export const structure: structureModel = {
               style_three: "",
               style_four: "bottom: 27.8%; left: 6.5%",
               style_five: "bottom: 31.3%; left: 3.63%;",
+              state: "",
               color: "background-color: #193B94;"
             },
             {
@@ -2385,6 +2507,7 @@ export const structure: structureModel = {
               style_three: "",
               style_four: "",
               style_five: "bottom: 28%; left: 7.7%",
+              state: "",
               color: "background-color: #193B94;"
             }
           ],
@@ -2405,6 +2528,7 @@ export const structure: structureModel = {
               style_three: "bottom: 42.5%; left: 2%;",
               style_four: "bottom: 43.8%; left: 2.2%;",
               style_five: "bottom: 44.8%; left: 3.5%",
+              state: "",
               color: "background-color: #193B94;"
             },
             {
@@ -2419,6 +2543,7 @@ export const structure: structureModel = {
               style_three: "bottom: 35%; left: 3%;",
               style_four: "bottom: 38.2%; left: 3%;",
               style_five: "bottom: 40.1%; left: 1.1%;",
+              state: "",
               color: "background-color: #193B94;"
             },
             {
@@ -2433,6 +2558,7 @@ export const structure: structureModel = {
               style_three: "bottom: 28%; left: 5.5%",
               style_four: "bottom: 32.8%; left: 4.5%;",
               style_five: "bottom: 36.3%; left: 4.95%;",
+              state: "",
               color: "background-color: #193B94;"
             },
             {
@@ -2447,6 +2573,7 @@ export const structure: structureModel = {
               style_three: "",
               style_four: "bottom: 27.8%; left: 6.5%",
               style_five: "bottom: 31.3%; left: 3.63%;",
+              state: "",
               color: "background-color: #193B94;"
             },
             {
@@ -2461,6 +2588,7 @@ export const structure: structureModel = {
               style_three: "",
               style_four: "",
               style_five: "bottom: 28%; left: 7.7%",
+              state: "",
               color: "background-color: #193B94;"
             },
           ],
@@ -2481,6 +2609,7 @@ export const structure: structureModel = {
               style_three: "bottom: 42.5%; left: 2%;",
               style_four: "bottom: 43.8%; left: 2.2%;",
               style_five: "bottom: 44.8%; left: 3.5%",
+              state: "",
               color: "background-color: #193B94;"
             },
             {
@@ -2495,6 +2624,7 @@ export const structure: structureModel = {
               style_three: "bottom: 35%; left: 3%;",
               style_four: "bottom: 38.2%; left: 3%;",
               style_five: "bottom: 40.1%; left: 1.1%;",
+              state: "",
               color: "background-color: #193B94;"
             },
             {
@@ -2509,6 +2639,7 @@ export const structure: structureModel = {
               style_three: "bottom: 28%; left: 5.5%",
               style_four: "bottom: 32.8%; left: 4.5%;",
               style_five: "bottom: 36.3%; left: 4.95%;",
+              state: "",
               color: "background-color: #193B94;"
             },
             {
@@ -2523,6 +2654,7 @@ export const structure: structureModel = {
               style_three: "",
               style_four: "bottom: 27.8%; left: 6.5%",
               style_five: "bottom: 31.3%; left: 3.63%;",
+              state: "",
               color: "background-color: #193B94;"
             },
             {
@@ -2537,6 +2669,7 @@ export const structure: structureModel = {
               style_three: "",
               style_four: "",
               style_five: "bottom: 28%; left: 7.7%",
+              state: "",
               color: "background-color: #193B94;"
             },
           ],
@@ -2551,7 +2684,7 @@ export const structure: structureModel = {
           count: 0,
           spells: [
             {
-              id: 28,
+              id: 1,
               spell_id: "",
               name: "",
               description: "",
@@ -2560,10 +2693,11 @@ export const structure: structureModel = {
               style_three: "",
               style_four: "",
               style_five: "",
+              state: "",
               color: "background-color: #00A8DB;"
             },
             {
-              id: 29,
+              id: 2,
               spell_id: "",
               name: "",
               description: "",
@@ -2572,10 +2706,11 @@ export const structure: structureModel = {
               style_three: "",
               style_four: "",
               style_five: "",
+              state: "",
               color: "background-color: #00A8DB;"
             },
             {
-              id: 30,
+              id: 3,
               spell_id: "",
               name: "",
               description: "",
@@ -2584,6 +2719,7 @@ export const structure: structureModel = {
               style_three: "",
               style_four: "",
               style_five: "",
+              state: "",
               color: "background-color: #00A8DB;"
             },
           ],
@@ -2602,6 +2738,7 @@ export const structure: structureModel = {
               style_three: "top: 28%; left: 5.5%",
               style_four: "top: 27.8%; left: 6.5%",
               style_five: "top: 28%; left: 7.7%",
+              state: "",
               color: "background-color: #193B94;"
             },
             {
@@ -2614,6 +2751,7 @@ export const structure: structureModel = {
               style_three: "top: 35%; left: 3%;",
               style_four: "top: 32.8%; left: 4.5%;",
               style_five: "top: 31.3%; left: 3.63%;",
+              state: "",
               color: "background-color: #193B94;"
             },
             {
@@ -2626,6 +2764,7 @@ export const structure: structureModel = {
               style_three: "top: 42.5%; left: 2%;",
               style_four: "top: 38.2%; left: 3%;",
               style_five: "top: 36.3%; left: 4.95%;",
+              state: "",
               color: "background-color: #193B94;"
             },
             {
@@ -2638,6 +2777,7 @@ export const structure: structureModel = {
               style_three: "",
               style_four: "top: 43.8%; left: 2.2%;",
               style_five: "top: 40.1%; left: 1.1%;",
+              state: "",
               color: "background-color: #193B94;"
             },
             {
@@ -2650,6 +2790,7 @@ export const structure: structureModel = {
               style_three: "",
               style_four: "",
               style_five: "top: 44.8%; left: 3.5%",
+              state: "",
               color: "background-color: #193B94;"
             }
           ],
@@ -2670,6 +2811,7 @@ export const structure: structureModel = {
               style_three: "top: 28%; left: 5.5%",
               style_four: "top: 27.8%; left: 6.5%",
               style_five: "top: 28%; left: 7.7%",
+              state: "",
               color: "background-color: #193B94;"
             },
             {
@@ -2684,6 +2826,7 @@ export const structure: structureModel = {
               style_three: "top: 35%; left: 3%;",
               style_four: "top: 32.8%; left: 4.5%;",
               style_five: "top: 31.3%; left: 3.63%;",
+              state: "",
               color: "background-color: #193B94;"
             },
             {
@@ -2698,6 +2841,7 @@ export const structure: structureModel = {
               style_three: "top: 42.5%; left: 2%;",
               style_four: "top: 38.2%; left: 3%;",
               style_five: "top: 36.3%; left: 4.95%;",
+              state: "",
               color: "background-color: #193B94;"
             },
             {
@@ -2710,6 +2854,7 @@ export const structure: structureModel = {
               style_three: "",
               style_four: "top: 43.8%; left: 2.2%;",
               style_five: "top: 40.1%; left: 1.1%;",
+              state: "",
               color: "background-color: #193B94;"
             },
             {
@@ -2722,6 +2867,7 @@ export const structure: structureModel = {
               style_three: "",
               style_four: "",
               style_five: "top: 44.8%; left: 3.5%",
+              state: "",
               color: "background-color: #193B94;"
             },
           ],
@@ -2742,6 +2888,7 @@ export const structure: structureModel = {
               style_three: "top: 28%; left: 5.5%",
               style_four: "top: 27.8%; left: 6.5%",
               style_five: "top: 28%; left: 7.7%",
+              state: "",
               color: "background-color: #193B94;"
             },
             {
@@ -2756,6 +2903,7 @@ export const structure: structureModel = {
               style_three: "top: 35%; left: 3%;",
               style_four: "top: 32.8%; left: 4.5%;",
               style_five: "top: 31.3%; left: 3.63%;",
+              state: "",
               color: "background-color: #193B94;"
             },
             {
@@ -2770,6 +2918,7 @@ export const structure: structureModel = {
               style_three: "top: 42.5%; left: 2%;",
               style_four: "top: 38.2%; left: 3%;",
               style_five: "top: 36.3%; left: 4.95%;",
+              state: "",
               color: "background-color: #193B94;"
             },
             {
@@ -2784,6 +2933,7 @@ export const structure: structureModel = {
               style_three: "",
               style_four: "top: 43.8%; left: 2.2%;",
               style_five: "top: 40.1%; left: 1.1%;",
+              state: "",
               color: "background-color: #193B94;"
             },
             {
@@ -2798,6 +2948,7 @@ export const structure: structureModel = {
               style_three: "",
               style_four: "",
               style_five: "top: 44.8%; left: 3.5%",
+              state: "",
               color: "background-color: #193B94;"
             },
           ],
@@ -2812,7 +2963,7 @@ export const structure: structureModel = {
           count: 0,
           spells: [
             {
-              id: 31,
+              id: 1,
               spell_id: "",
               name: "",
               description: "",
@@ -2821,10 +2972,11 @@ export const structure: structureModel = {
               style_three: "",
               style_four: "",
               style_five: "",
+              state: "",
               color: "background-color: #093F4F;"
             },
             {
-              id: 32,
+              id: 2,
               spell_id: "",
               name: "",
               description: "",
@@ -2833,10 +2985,11 @@ export const structure: structureModel = {
               style_three: "",
               style_four: "",
               style_five: "",
+              state: "",
               color: "background-color: #093F4F;"
             },
             {
-              id: 33,
+              id: 3,
               spell_id: "",
               name: "",
               description: "",
@@ -2845,6 +2998,7 @@ export const structure: structureModel = {
               style_three: "",
               style_four: "",
               style_five: "",
+              state: "",
               color: "background-color: #093F4F;"
 
             },
@@ -2864,6 +3018,7 @@ export const structure: structureModel = {
               style_three: "top: 10%; left: 20%",
               style_four: "top: 9.8%; left: 21.5%",
               style_five: "top: 10.7%; left: 23%",
+              state: "",
               color: "background-color: #193B94;"
             },
             {
@@ -2876,6 +3031,7 @@ export const structure: structureModel = {
               style_three: "top: 15%; left: 14.5%;",
               style_four: "top: 13%; left: 17%;",
               style_five: "top: 11.1%; left: 17.7%;",
+              state: "",
               color: "background-color: #193B94;"
             },
             {
@@ -2888,6 +3044,7 @@ export const structure: structureModel = {
               style_three: "top: 20.7%; left: 10%;",
               style_four: "top: 17%; left: 13%;",
               style_five: "top: 16%; left: 16.2%;",
+              state: "",
               color: "background-color: #193B94;"
             },
             {
@@ -2900,6 +3057,7 @@ export const structure: structureModel = {
               style_three: "",
               style_four: "top: 22%; left: 10.2%;",
               style_five: "top: 17.7%; left: 11.3%;",
+              state: "",
               color: "background-color: #193B94;"
             },
             {
@@ -2912,6 +3070,7 @@ export const structure: structureModel = {
               style_three: "",
               style_four: "",
               style_five: "top: 22.8%; left: 10.8%;",
+              state: "",
               color: "background-color: #193B94;"
             }
           ],
@@ -2932,6 +3091,7 @@ export const structure: structureModel = {
               style_three: "top: 10%; left: 20%",
               style_four: "top: 9.8%; left: 21.5%",
               style_five: "top: 10.7%; left: 23%",
+              state: "",
               color: "background-color: #193B94;"
             },
             {
@@ -2946,6 +3106,7 @@ export const structure: structureModel = {
               style_three: "top: 15%; left: 14.5%;",
               style_four: "top: 13%; left: 17%;",
               style_five: "top: 11.1%; left: 17.7%;",
+              state: "",
               color: "background-color: #193B94;"
             },
             {
@@ -2960,6 +3121,7 @@ export const structure: structureModel = {
               style_three: "top: 20.7%; left: 10%;",
               style_four: "top: 17%; left: 13%;",
               style_five: "top: 16%; left: 16.2%;",
+              state: "",
               color: "background-color: #193B94;"
             },
             {
@@ -2974,6 +3136,7 @@ export const structure: structureModel = {
               style_three: "",
               style_four: "top: 22%; left: 10.2%;",
               style_five: "top: 17.7%; left: 11.3%;",
+              state: "",
               color: "background-color: #193B94;"
             },
             {
@@ -2988,6 +3151,7 @@ export const structure: structureModel = {
               style_three: "",
               style_four: "",
               style_five: "top: 22.8%; left: 10.8%",
+              state: "",
               color: "background-color: #193B94;"
             },
           ],
@@ -3008,6 +3172,7 @@ export const structure: structureModel = {
               style_three: "top: 10%; left: 20%",
               style_four: "top: 9.8%; left: 21.5%",
               style_five: "top: 10.7%; left: 23%",
+              state: "",
               color: "background-color: #193B94;"
             },
             {
@@ -3022,6 +3187,7 @@ export const structure: structureModel = {
               style_three: "top: 15%; left: 14.5%;",
               style_four: "top: 13%; left: 17%;",
               style_five: "top: 11.1%; left: 17.7%;",
+              state: "",
               color: "background-color: #193B94;"
             },
             {
@@ -3036,6 +3202,7 @@ export const structure: structureModel = {
               style_three: "top: 20.7%; left: 10%;",
               style_four: "top: 17%; left: 13%;",
               style_five: "top: 16%; left: 16.2%;",
+              state: "",
               color: "background-color: #193B94;"
             },
             {
@@ -3050,6 +3217,7 @@ export const structure: structureModel = {
               style_three: "",
               style_four: "top: 22%; left: 10.2%;",
               style_five: "top: 17.7%; left: 11.3%;",
+              state: "",
               color: "background-color: #193B94;"
             },
             {
@@ -3064,6 +3232,7 @@ export const structure: structureModel = {
               style_three: "",
               style_four: "",
               style_five: "top: 22.8%; left: 10.8%;",
+              state: "",
               color: "background-color: #193B94;"
             },
           ],
@@ -3078,7 +3247,7 @@ export const structure: structureModel = {
           count: 0,
           spells: [
             {
-              id: 34,
+              id: 1,
               spell_id: "",
               name: "",
               description: "",
@@ -3087,10 +3256,11 @@ export const structure: structureModel = {
               style_three: "",
               style_four: "",
               style_five: "",
+              state: "",
               color: "background-color: #6276AB;"
             },
             {
-              id: 35,
+              id: 2,
               spell_id: "",
               name: "",
               description: "",
@@ -3099,10 +3269,11 @@ export const structure: structureModel = {
               style_three: "",
               style_four: "",
               style_five: "",
+              state: "",
               color: "background-color: #6276AB;"
             },
             {
-              id: 36,
+              id: 3,
               spell_id: "",
               name: "",
               description: "",
@@ -3111,6 +3282,7 @@ export const structure: structureModel = {
               style_three: "",
               style_four: "",
               style_five: "",
+              state: "",
               color: "background-color: #6276AB;"
             },
           ],
@@ -3129,6 +3301,7 @@ export const structure: structureModel = {
               style_three: "top: 1.5%; left: 42.4%",
               style_four: "top: 1.4%; left: 44%",
               style_five: "top: 3.13%; left: 44.63%",
+              state: "",
               color: "background-color: #193B94;"
             },
             {
@@ -3141,6 +3314,7 @@ export const structure: structureModel = {
               style_three: "top: 2.5%; left: 35.2%;",
               style_four: "top: 2.2%; left: 38.2%;",
               style_five: "top: 1.3%; left: 39.63%;",
+              state: "",
               color: "background-color: #193B94;"
             },
             {
@@ -3153,6 +3327,7 @@ export const structure: structureModel = {
               style_three: "top: 5.5%; left: 27.75% ;",
               style_four: "top: 4%; left: 32.5%;",
               style_five: "top: 4.8%; left: 35.75%;",
+              state: "",
               color: "background-color: #193B94;"
             },
             {
@@ -3165,6 +3340,7 @@ export const structure: structureModel = {
               style_three: "",
               style_four: "top: 6.2%; left: 27.2%;",
               style_five: "top: 3.38%; left: 30.75%;",
+              state: "",
               color: "background-color: #193B94;"
             },
             {
@@ -3177,6 +3353,7 @@ export const structure: structureModel = {
               style_three: "",
               style_four: "",
               style_five: "top: 7.8%; left: 27.8%;",
+              state: "",
               color: "background-color: #193B94;"
             }
           ],
@@ -3197,6 +3374,7 @@ export const structure: structureModel = {
               style_three: "top: 1.5%; left: 42.4%",
               style_four: "top: 1.4%; left: 44%",
               style_five: "top: 3.13%; left: 44.63%",
+              state: "",
               color: "background-color: #193B94;"
             },
             {
@@ -3211,6 +3389,7 @@ export const structure: structureModel = {
               style_three: "top: 2.5%; left: 35.2%;",
               style_four: "top: 2.2%; left: 38.2%;",
               style_five: "top: 1.3%; left: 39.63%;",
+              state: "",
               color: "background-color: #193B94;"
             },
             {
@@ -3225,6 +3404,7 @@ export const structure: structureModel = {
               style_three: "top: 5.5%; left: 27.75% ;",
               style_four: "top: 4%; left: 32.5%;",
               style_five: "top: 4.8%; left: 35.75%;",
+              state: "",
               color: "background-color: #193B94;"
             },
             {
@@ -3237,6 +3417,7 @@ export const structure: structureModel = {
               style_three: "",
               style_four: "top: 6.2%; left: 27.2%;",
               style_five: "top: 3.38%; left: 30.75%;",
+              state: "",
               color: "background-color: #193B94;"
             },
             {
@@ -3249,6 +3430,7 @@ export const structure: structureModel = {
               style_three: "",
               style_four: "",
               style_five: "top: 7.8%; left: 27.8%;",
+              state: "",
               color: "background-color: #193B94;"
             },
           ],
@@ -3269,6 +3451,7 @@ export const structure: structureModel = {
               style_three: "top: 1.5%; left: 42.4%",
               style_four: "top: 1.4%; left: 44%",
               style_five: "top: 3.13%; left: 44.63%",
+              state: "",
               color: "background-color: #193B94;"
             },
             {
@@ -3283,6 +3466,7 @@ export const structure: structureModel = {
               style_three: "top: 2.5%; left: 35.2%;",
               style_four: "top: 2.2%; left: 38.2%;",
               style_five: "top: 1.3%; left: 39.63%;",
+              state: "",
               color: "background-color: #193B94;"
             },
             {
@@ -3297,6 +3481,7 @@ export const structure: structureModel = {
               style_three: "top: 5.5%; left: 27.75% ;",
               style_four: "top: 4%; left: 32.5%;",
               style_five: "top: 4.8%; left: 35.75%;",
+              state: "",
               color: "background-color: #193B94;"
             },
             {
@@ -3311,6 +3496,7 @@ export const structure: structureModel = {
               style_three: "",
               style_four: "top: 6.2%; left: 27.2%;",
               style_five: "top: 3.38%; left: 30.75%;",
+              state: "",
               color: "background-color: #193B94;"
             },
             {
@@ -3325,6 +3511,7 @@ export const structure: structureModel = {
               style_three: "",
               style_four: "",
               style_five: "top: 7.8%; left: 27.8%;",
+              state: "",
               color: "background-color: #193B94;"
             },
           ],

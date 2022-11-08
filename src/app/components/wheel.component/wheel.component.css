@@ -1,0 +1,260 @@
+﻿.header_container {
+  width: 100%;
+  height: 80px;
+  box-sizing: border-box;
+  background-color: silver;
+  border: 5px solid darkslategrey;
+}
+
+.wheel_container {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  display: flex;
+  background-color: darkslategrey;
+}
+
+.circle {
+  border-radius: 50%;
+}
+
+p {
+  position: absolute;
+  left: -100%;
+  width: 200%;
+  text-align: center;
+  padding-top: 20px;
+}
+
+.main-c {
+  height: 100%;
+  width: 100%;
+  left: 0;
+  top: 0;
+  background-color: whitesmoke;
+}
+
+.second-c {
+  height: 83%;
+  width: 83%;
+  left: 8.5%;
+  top: 8.5%;
+  position: absolute;
+  background-color: darkseagreen;
+}
+
+.third-c {
+  height: 68%;
+  width: 68%;
+  left: 16%;
+  top: 16%;
+  position: absolute;
+  /*z-index: 2;*/
+  background-color: slategray;
+}
+
+.fourth-c {
+  height: 53%;
+  width: 53%;
+  left: 23.6%;
+  top: 23.6%;
+  position: absolute;
+  background-color: cadetblue;
+}
+
+.central-c {
+  height: 39%;
+  width: 40%;
+  left: 30.5%;
+  top: 29.5%;
+  position: absolute;
+  background-color: ghostwhite;
+  z-index: 5;
+}
+
+.spell {
+  z-index: 8;
+  opacity: 1;
+  border-radius: 50%;
+  position: absolute;
+}
+
+.central_spell {
+  z-index: 5;
+  position: relative;
+}
+
+.central_image {
+  height: 65%;
+  width: 65%;
+}
+
+.not_selected {
+  filter: grayscale(100%);
+}
+
+.image {
+  height: 100%;
+  width: 100%;
+}
+
+div .spell:hover {
+  transform: scale(2);
+  z-index: 15;
+}
+
+div .spell:hover .tooltip {
+  transform: scale(0.5);
+  z-index: 15;
+}
+
+.outside_spell {
+  height: 6.25%;
+  width: 6.25%;
+  margin: -1px 1px 3px -1px;;
+}
+
+.tooltip {
+  position: absolute;
+  display: inline-block;
+}
+
+.tooltip .tooltiptext {
+  visibility: hidden;
+  width: 120px;
+  background-color: black;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px 0;
+  position: absolute;
+  bottom: 100%;
+  left: 50%;
+
+  /* Fade in tooltip - takes 1 second to go from 0% to 100% opac: */
+  opacity: 0;
+  transition: opacity 1s;
+}
+
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+  opacity: 1;
+}
+
+.spell_first_circle_three {
+  height: 6.1%;
+  width: 6.1%;
+}
+
+.spell_first_circle_four {
+  height: 6.1%;
+  width: 6.1%;
+}
+
+.spell_first_circle_five {
+  height: 4.9%;
+  width: 4.9%;
+}
+
+.spell_second_circle_first {
+  height: 7.1%;
+  width: 7.1%;
+  margin: 2px;
+}
+
+.spell_second_circle_two {
+  height: 8.1%;
+  width: 8.1%;
+  margin: 3px;
+}
+
+.spell_internal {
+  height: 10%;
+  width: 10%;
+}
+
+.circle_color {
+  opacity: 0.1;
+  list-style: none;
+  overflow: hidden;
+  z-index: 1;
+}
+
+.color-c {
+  height: 83%;
+  width: 83%;
+  left: 8.5%;
+  top: 8.5%;
+  position: absolute;
+  background-color: darkseagreen;
+}
+
+li {
+  overflow: hidden;
+  position: absolute;
+  opacity: 0.9;
+  top: 0;
+  right: 0;
+  width: 50%;
+  height: 50%;
+  transform-origin: 0 100%;
+  border-left: 1px groove black;
+}
+
+.text {
+  position: absolute;
+  left: -100%;
+  width: 200%;
+  height: 200%;
+  text-align: center;
+  transform: skewY(60deg) rotate(15deg);
+  padding-top: 20px;
+}
+li:first-child {
+  background: #ea4303;
+  transform: rotate(0deg) skewY(-60deg);
+}
+li:nth-child(2) {
+  background: #856d04;
+  transform: rotate(30deg) skewY(-60deg);
+}
+li:nth-child(3) {
+  background: aqua;
+  transform: rotate(60deg) skewY(-60deg);
+}
+li:nth-child(4) {
+  background: yellow;
+  transform: rotate(90deg) skewY(-60deg);
+}
+li:nth-child(5) {
+  background: #383838;
+  transform: rotate(120deg) skewY(-60deg);
+}
+li:nth-child(6) {
+  background: purple;
+  transform: rotate(150deg) skewY(-60deg);
+}
+li:nth-child(7) {
+  background: cyan;
+  transform: rotate(180deg) skewY(-60deg);
+}
+li:nth-child(8) {
+  background: brown;
+  transform: rotate(210deg) skewY(-60deg);
+}
+li:nth-child(9) {
+  background: gray;
+  transform: rotate(240deg) skewY(-60deg);
+}
+li:nth-child(10) {
+  background: pink;
+  transform: rotate(270deg) skewY(-60deg);
+}
+li:nth-child(11) {
+  background: maroon;
+  transform: rotate(300deg) skewY(-60deg);
+}
+li:nth-child(12) {
+  background: gold;
+  transform: rotate(330deg) skewY(-60deg);
+}

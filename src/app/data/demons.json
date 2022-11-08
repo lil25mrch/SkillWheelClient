@@ -1,51 +1,51 @@
 ﻿[
   {
-    "SkillId":"Basic_Avenger",
+    "SkillId":"Basic_Gating",
     "SectionId":0,
     "DepthLevel":0,
     "RequiredSkillIds":[]
   },
   {
-    "SkillId":"Advanced_Avenger",
+    "SkillId":"Advanced_Gating",
     "SectionId":0,
     "DepthLevel":0,
-    "RequiredSkillIds":["Basic_Avenger"]
+    "RequiredSkillIds":["Basic_Gating"]
   },
   {
-    "SkillId":"Expert_Avenger",
+    "SkillId":"Expert_Gating",
     "SectionId":0,
     "DepthLevel":0,
-    "RequiredSkillIds":["Advanced_Avenger"]
+    "RequiredSkillIds":["Advanced_Gating"]
   },
   {
-    "SkillId":"Ultimate_Avenger",
+    "SkillId":"Ultimate_Gating",
     "SectionId":0,
     "DepthLevel":0,
-    "RequiredSkillIds":["Expert_Avenger"]
+    "RequiredSkillIds":["Expert_Gating"]
   },
   {
-    "SkillId":"Imbue_Arrow",
+    "SkillId":"Consume_Corpse",
     "SectionId":0,
     "DepthLevel":1,
     "RequiredSkillIds":[]
   },
   {
-    "SkillId":"Rain_of_Arrows",
+    "SkillId":"Hellfire",
     "SectionId":0,
     "DepthLevel":1,
     "RequiredSkillIds":[]
   },
   {
-    "SkillId":"Deadeye_Shot",
+    "SkillId":"Mark_of_the_Damned",
     "SectionId":0,
     "DepthLevel":1,
     "RequiredSkillIds":[]
   },
   {
-    "SkillId":"Nature's_Luck",
+    "SkillId":"Urgash's_Call",
     "SectionId":0,
     "DepthLevel":2,
-    "RequiredSkillIds":["Refined_Mana","Elven_Luck","Familiar_Ground"]
+    "RequiredSkillIds":["Corrupted_Soil","Teleport_Assault","Flaming_Arrows"]
   },
   {
     "SkillId":"Basic_Light_Magic",
@@ -90,13 +90,13 @@
     "RequiredSkillIds":[]
   },
   {
-    "SkillId":"Eternal_Light",
+    "SkillId":"Fire_Resistance",
     "SectionId":1,
-    "DepthLevel":2,
-    "RequiredSkillIds":["Master_of_Abjuration"]
+    "DepthLevel":1,
+    "RequiredSkillIds":["Hellfire"]
   },
   {
-    "SkillId":"Fire_Resistance",
+    "SkillId":"Eternal_Light",
     "SectionId":1,
     "DepthLevel":2,
     "RequiredSkillIds":["Master_of_Abjuration"]
@@ -116,8 +116,8 @@
   {
     "SkillId":"Refined_Mana",
     "SectionId":1,
-    "DepthLevel":3,
-    "RequiredSkillIds":["Storm_Wind","Imbue_Arrow"]
+    "DepthLevel":2,
+    "RequiredSkillIds":["Master_of_Wrath"]
   },
   {
     "SkillId":"Basic_Dark_Magic",
@@ -156,6 +156,12 @@
     "RequiredSkillIds":[]
   },
   {
+    "SkillId":"Weakening_Strike",
+    "SectionId":2,
+    "DepthLevel":1,
+    "RequiredSkillIds":["Mark_of_the_Damned"]
+  },
+  {
     "SkillId":"Dark_Renewal",
     "SectionId":2,
     "DepthLevel":2,
@@ -177,7 +183,7 @@
     "SkillId":"Corrupted_Soil",
     "SectionId":2,
     "DepthLevel":2,
-    "RequiredSkillIds":["Master_Of_Sickness"]
+    "RequiredSkillIds":["Master_Of_Sickness","Weakening_Strike"]
   },
   {
     "SkillId":"Basic_Destructiv_Magic",
@@ -214,6 +220,12 @@
     "SectionId":3,
     "DepthLevel":1,
     "RequiredSkillIds":[]
+  },
+  {
+    "SkillId":"Searing_Fires",
+    "SectionId":3,
+    "DepthLevel":2,
+    "RequiredSkillIds":["Master_of_Fire","Hellfire"]
   },
   {
     "SkillId":"Mana_Burst",
@@ -291,7 +303,13 @@
     "SkillId":"Exorcism",
     "SectionId":4,
     "DepthLevel":1,
-    "RequiredSkillIds":["Imbue_Arrow"]
+    "RequiredSkillIds":["Mark_of_the_Damned"]
+  },
+  {
+    "SkillId":"Fire_Warriors",
+    "SectionId":4,
+    "DepthLevel":1,
+    "RequiredSkillIds":["Hellfire"]
   },
   {
     "SkillId":"Elemental_Balance",
@@ -301,12 +319,6 @@
   },
   {
     "SkillId":"Banish",
-    "SectionId":4,
-    "DepthLevel":2,
-    "RequiredSkillIds":["Master_of_Conjuration"]
-  },
-  {
-    "SkillId":"Fire_Warriors",
     "SectionId":4,
     "DepthLevel":2,
     "RequiredSkillIds":["Master_of_Conjuration"]
@@ -352,6 +364,12 @@
     "SectionId":5,
     "DepthLevel":1,
     "RequiredSkillIds":[]
+  },
+  {
+    "SkillId":"Soulfire",
+    "SectionId":5,
+    "DepthLevel":1,
+    "RequiredSkillIds":["Consume_Corpse"]
   },
   {
     "SkillId":"Dark_Revelation",
@@ -414,6 +432,12 @@
     "RequiredSkillIds":[]
   },
   {
+    "SkillId":"Excruciating_Strikez",
+    "SectionId":6,
+    "DepthLevel":1,
+    "RequiredSkillIds":["Mark_of_the_Damned"]
+  },
+  {
     "SkillId":"Tactics",
     "SectionId":6,
     "DepthLevel":1,
@@ -426,28 +450,16 @@
     "RequiredSkillIds":["Master_Of_Ice"]
   },
   {
-    "SkillId":"Flaming_Arrows",
-    "SectionId":6,
-    "DepthLevel":2,
-    "RequiredSkillIds":["Archery"]
-  },
-  {
-    "SkillId":"Nature's_Wrath",
-    "SectionId":6,
-    "DepthLevel":2,
-    "RequiredSkillIds":["Battle_Frenzy"]
-  },
-  {
     "SkillId":"Power_of_Speed",
     "SectionId":6,
     "DepthLevel":2,
     "RequiredSkillIds":["Battle_Frenzy"]
   },
   {
-    "SkillId":"Retribution",
+    "SkillId":"Flaming_Arrows",
     "SectionId":6,
-    "DepthLevel":2,
-    "RequiredSkillIds":["Battle_Frenzy","Rain_of_Arrows","Battle_Commander"]
+    "DepthLevel":3,
+    "RequiredSkillIds":["Battle_Frenzy","Excruciating_Strikez","Hellfire"]
   },
   {
     "SkillId":"Basic_Defense",
@@ -496,6 +508,12 @@
     "SectionId":7,
     "DepthLevel":2,
     "RequiredSkillIds":["Protection"]
+  },
+  {
+    "SkillId":"Hellwrath",
+    "SectionId":7,
+    "DepthLevel":2,
+    "RequiredSkillIds":["Protection","Hellfire"]
   },
   {
     "SkillId":"Power_Of_Endurance",
@@ -570,10 +588,16 @@
     "RequiredSkillIds":["Soldier's_Luck","Dark_Revelation"]
   },
   {
-    "SkillId":"Elven_Luck",
+    "SkillId":"Swarming_Gate",
     "SectionId":8,
-    "DepthLevel":3,
-    "RequiredSkillIds":["Soldier's_Luck","Resourcefulness","Rain_of_Arrows"]
+    "DepthLevel":2,
+    "RequiredSkillIds":["Soldier's_Luck"]
+  },
+  {
+    "SkillId":"Dead_Man's_Curse",
+    "SectionId":8,
+    "DepthLevel":2,
+    "RequiredSkillIds":["Soldier's_Luck"]
   },
   {
     "SkillId":"Basic_Leadership",
@@ -615,6 +639,12 @@
     "SkillId":"Empathy",
     "SectionId":9,
     "DepthLevel":2,
+    "RequiredSkillIds":["Diplomacy","Arcane_Exaltation"]
+  },
+  {
+    "SkillId":"Gate_Master",
+    "SectionId":9,
+    "DepthLevel":2,
     "RequiredSkillIds":["Diplomacy"]
   },
   {
@@ -624,16 +654,10 @@
     "RequiredSkillIds":["Recruitment"]
   },
   {
-    "SkillId":"Battle_Commander",
-    "SectionId":9,
-    "DepthLevel":2,
-    "RequiredSkillIds":["Recruitment"]
-  },
-  {
     "SkillId":"Divine_Guidance",
     "SectionId":9,
     "DepthLevel":3,
-    "RequiredSkillIds":["Battle_Commander"]
+    "RequiredSkillIds":["Diplomacy","Recruitment","Dark_Revelation"]
   },
   {
     "SkillId":"Basic_Logistics",
@@ -666,10 +690,10 @@
     "RequiredSkillIds":[]
   },
   {
-    "SkillId":"Silent_Stalker",
+    "SkillId":"Swift_Gating",
     "SectionId":10,
     "DepthLevel":1,
-    "RequiredSkillIds":["Deadeye_Shot"]
+    "RequiredSkillIds":["Consume_Corpse"]
   },
   {
     "SkillId":"Scouting",
@@ -678,13 +702,13 @@
     "RequiredSkillIds":[]
   },
   {
-    "SkillId":"Warpath",
+    "SkillId":"Death_March",
     "SectionId":10,
     "DepthLevel":2,
     "RequiredSkillIds":["Pathfinding"]
   },
   {
-    "SkillId":"Death_March",
+    "SkillId":"Warpath",
     "SectionId":10,
     "DepthLevel":2,
     "RequiredSkillIds":["Pathfinding"]
@@ -696,16 +720,22 @@
     "RequiredSkillIds":["Scouting"]
   },
   {
-    "SkillId":"Familiar_Ground",
+    "SkillId":"Silent_Stalker",
     "SectionId":10,
-    "DepthLevel":3,
-    "RequiredSkillIds":["Pathfinding","Silent_Stalker"]
+    "DepthLevel":2,
+    "RequiredSkillIds":["Scouting"]
   },
   {
     "SkillId":"Snatch",
     "SectionId":10,
+    "DepthLevel":2,
+    "RequiredSkillIds":["Pathfinding","Hellfire"]
+  },
+  {
+    "SkillId":"Teleport_Assault",
+    "SectionId":10,
     "DepthLevel":3,
-    "RequiredSkillIds":["Pathfinding","Silent_Stalker"]
+    "RequiredSkillIds":["Pathfinding","Swift_Gating"]
   },
   {
     "SkillId":"Basic_Enlightenment",
@@ -744,10 +774,10 @@
     "RequiredSkillIds":[]
   },
   {
-    "SkillId":"Know_Your_Enemy",
+    "SkillId":"Dark_Renewal",
     "SectionId":11,
     "DepthLevel":2,
-    "RequiredSkillIds":["Arcane_Intuition"]
+    "RequiredSkillIds":["Intelligence"]
   },
   {
     "SkillId":"Graduate",
@@ -810,21 +840,27 @@
     "RequiredSkillIds":[]
   },
   {
+    "SkillId":"Tremors",
+    "SectionId":12,
+    "DepthLevel":1,
+    "RequiredSkillIds":["Mark_of_the_Damned"]
+  },
+  {
     "SkillId":"Triple_Ballista",
     "SectionId":12,
     "DepthLevel":2,
-    "RequiredSkillIds":["Ballista"]
-  },
-  {
-    "SkillId":"Imbue_Ballista",
-    "SectionId":12,
-    "DepthLevel":2,
-    "RequiredSkillIds":["Ballista","Imbue_Arrow"]
+    "RequiredSkillIds":["Ballista","Hellfire"]
   },
   {
     "SkillId":"Brimstone_Rain",
     "SectionId":12,
     "DepthLevel":2,
     "RequiredSkillIds":["Catapult"]
+  },
+  {
+    "SkillId":"First_Aid",
+    "SectionId":12,
+    "DepthLevel":2,
+    "RequiredSkillIds":["First_Aid"]
   }
 ]

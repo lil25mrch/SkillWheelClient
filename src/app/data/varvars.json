@@ -3,828 +3,1118 @@
     "SkillId":"Basic_Avenger",
     "SectionId":0,
     "DepthLevel":0,
-    "RequiredSkillIds":[]
+    "RequiredSkillIds":[
+
+    ]
   },
   {
     "SkillId":"Advanced_Avenger",
     "SectionId":0,
     "DepthLevel":0,
-    "RequiredSkillIds":["Basic_Avenger"]
+    "RequiredSkillIds":[
+      "Basic_Avenger"
+    ]
   },
   {
     "SkillId":"Expert_Avenger",
     "SectionId":0,
     "DepthLevel":0,
-    "RequiredSkillIds":["Advanced_Avenger"]
+    "RequiredSkillIds":[
+      "Advanced_Avenger"
+    ]
   },
   {
     "SkillId":"Ultimate_Avenger",
     "SectionId":0,
     "DepthLevel":0,
-    "RequiredSkillIds":["Expert_Avenger"]
+    "RequiredSkillIds":[
+      "Expert_Avenger"
+    ]
   },
   {
     "SkillId":"Imbue_Arrow",
     "SectionId":0,
     "DepthLevel":1,
-    "RequiredSkillIds":[]
+    "RequiredSkillIds":[
+
+    ]
   },
   {
     "SkillId":"Rain_of_Arrows",
     "SectionId":0,
     "DepthLevel":1,
-    "RequiredSkillIds":[]
+    "RequiredSkillIds":[
+
+    ]
   },
   {
     "SkillId":"Deadeye_Shot",
     "SectionId":0,
     "DepthLevel":1,
-    "RequiredSkillIds":[]
+    "RequiredSkillIds":[
+
+    ]
   },
   {
     "SkillId":"Nature's_Luck",
     "SectionId":0,
     "DepthLevel":2,
-    "RequiredSkillIds":["Refined_Mana","Elven_Luck","Familiar_Ground"]
+    "RequiredSkillIds":[
+      "Refined_Mana",
+      "Elven_Luck",
+      "Familiar_Ground"
+    ]
   },
   {
     "SkillId":"Basic_Light_Magic",
     "SectionId":1,
     "DepthLevel":0,
-    "RequiredSkillIds":[]
+    "RequiredSkillIds":[
+
+    ]
   },
   {
     "SkillId":"Advanced_Light_Magic",
     "SectionId":1,
     "DepthLevel":0,
-    "RequiredSkillIds":["Basic_Light_Magic"]
+    "RequiredSkillIds":[
+      "Basic_Light_Magic"
+    ]
   },
   {
     "SkillId":"Advanced_Light_Magic",
     "SectionId":1,
     "DepthLevel":0,
-    "RequiredSkillIds":["Basic_Light_Magic"]
+    "RequiredSkillIds":[
+      "Basic_Light_Magic"
+    ]
   },
   {
     "SkillId":"Expert_Light_Magic",
     "SectionId":1,
     "DepthLevel":0,
-    "RequiredSkillIds":["Advanced_Light_Magic"]
+    "RequiredSkillIds":[
+      "Advanced_Light_Magic"
+    ]
   },
   {
     "SkillId":"Master_of_Abjuration",
     "SectionId":1,
     "DepthLevel":1,
-    "RequiredSkillIds":[]
+    "RequiredSkillIds":[
+
+    ]
   },
   {
     "SkillId":"Master_of_Blessings",
     "SectionId":1,
     "DepthLevel":1,
-    "RequiredSkillIds":[]
+    "RequiredSkillIds":[
+
+    ]
   },
   {
     "SkillId":"Master_of_Wrath",
     "SectionId":1,
     "DepthLevel":1,
-    "RequiredSkillIds":[]
+    "RequiredSkillIds":[
+
+    ]
   },
   {
     "SkillId":"Eternal_Light",
     "SectionId":1,
     "DepthLevel":2,
-    "RequiredSkillIds":["Master_of_Abjuration"]
+    "RequiredSkillIds":[
+      "Master_of_Abjuration"
+    ]
   },
   {
     "SkillId":"Fire_Resistance",
     "SectionId":1,
     "DepthLevel":2,
-    "RequiredSkillIds":["Master_of_Abjuration"]
+    "RequiredSkillIds":[
+      "Master_of_Abjuration"
+    ]
   },
   {
     "SkillId":"Supress_Light",
     "SectionId":1,
     "DepthLevel":2,
-    "RequiredSkillIds":["Master_of_Abjuration"]
+    "RequiredSkillIds":[
+      "Master_of_Abjuration"
+    ]
   },
   {
     "SkillId":"Storm_Wind",
     "SectionId":1,
     "DepthLevel":2,
-    "RequiredSkillIds":["Master_of_Wrath"]
+    "RequiredSkillIds":[
+      "Master_of_Wrath"
+    ]
   },
   {
     "SkillId":"Refined_Mana",
     "SectionId":1,
     "DepthLevel":3,
-    "RequiredSkillIds":["Storm_Wind","Imbue_Arrow"]
+    "RequiredSkillIds":[
+      "Storm_Wind",
+      "Imbue_Arrow"
+    ]
   },
   {
     "SkillId":"Basic_Dark_Magic",
     "SectionId":2,
     "DepthLevel":0,
-    "RequiredSkillIds":[]
+    "RequiredSkillIds":[
+
+    ]
   },
   {
     "SkillId":"Advanced_Dark_Magic",
     "SectionId":2,
     "DepthLevel":0,
-    "RequiredSkillIds":["Basic_Dark_Magic"]
+    "RequiredSkillIds":[
+      "Basic_Dark_Magic"
+    ]
   },
   {
     "SkillId":"Expert_Dark_Magic",
     "SectionId":2,
     "DepthLevel":0,
-    "RequiredSkillIds":["Advanced_Dark_Magic"]
+    "RequiredSkillIds":[
+      "Advanced_Dark_Magic"
+    ]
   },
   {
     "SkillId":"Master_Of_Curses",
     "SectionId":2,
     "DepthLevel":1,
-    "RequiredSkillIds":[]
+    "RequiredSkillIds":[
+
+    ]
   },
   {
     "SkillId":"Master_Of_Mind",
     "SectionId":2,
     "DepthLevel":1,
-    "RequiredSkillIds":[]
+    "RequiredSkillIds":[
+
+    ]
   },
   {
     "SkillId":"Master_Of_Sickness",
     "SectionId":2,
     "DepthLevel":1,
-    "RequiredSkillIds":[]
+    "RequiredSkillIds":[
+
+    ]
   },
   {
     "SkillId":"Dark_Renewal",
     "SectionId":2,
     "DepthLevel":2,
-    "RequiredSkillIds":["Master_Of_Curses"]
+    "RequiredSkillIds":[
+      "Master_Of_Curses"
+    ]
   },
   {
     "SkillId":"Seal_of_Darkness",
     "SectionId":2,
     "DepthLevel":2,
-    "RequiredSkillIds":["Master_Of_Mind"]
+    "RequiredSkillIds":[
+      "Master_Of_Mind"
+    ]
   },
   {
     "SkillId":"Shrug_Darkness",
     "SectionId":2,
     "DepthLevel":2,
-    "RequiredSkillIds":["Master_Of_Mind"]
+    "RequiredSkillIds":[
+      "Master_Of_Mind"
+    ]
   },
   {
     "SkillId":"Corrupted_Soil",
     "SectionId":2,
     "DepthLevel":2,
-    "RequiredSkillIds":["Master_Of_Sickness"]
+    "RequiredSkillIds":[
+      "Master_Of_Sickness"
+    ]
   },
   {
     "SkillId":"Basic_Destructiv_Magic",
     "SectionId":3,
     "DepthLevel":0,
-    "RequiredSkillIds":[]
+    "RequiredSkillIds":[
+
+    ]
   },
   {
     "SkillId":"Advanced_Destructive_Magic",
     "SectionId":3,
     "DepthLevel":0,
-    "RequiredSkillIds":["Basic_Destructiv_Magic"]
+    "RequiredSkillIds":[
+      "Basic_Destructiv_Magic"
+    ]
   },
   {
     "SkillId":"Expert_Destructive_Magic",
     "SectionId":3,
     "DepthLevel":0,
-    "RequiredSkillIds":["Advanced_Destructive_Magic"]
+    "RequiredSkillIds":[
+      "Advanced_Destructive_Magic"
+    ]
   },
   {
     "SkillId":"Master_of_Fire",
     "SectionId":3,
     "DepthLevel":1,
-    "RequiredSkillIds":[]
+    "RequiredSkillIds":[
+
+    ]
   },
   {
     "SkillId":"Master_Of_Ice",
     "SectionId":3,
     "DepthLevel":1,
-    "RequiredSkillIds":[]
+    "RequiredSkillIds":[
+
+    ]
   },
   {
     "SkillId":"Master_of_Storms",
     "SectionId":3,
     "DepthLevel":1,
-    "RequiredSkillIds":[]
+    "RequiredSkillIds":[
+
+    ]
   },
   {
     "SkillId":"Mana_Burst",
     "SectionId":3,
     "DepthLevel":2,
-    "RequiredSkillIds":["Master_of_Fire"]
+    "RequiredSkillIds":[
+      "Master_of_Fire"
+    ]
   },
   {
     "SkillId":"Secrets_Of_Destruction",
     "SectionId":3,
     "DepthLevel":2,
-    "RequiredSkillIds":["Master_of_Fire"]
+    "RequiredSkillIds":[
+      "Master_of_Fire"
+    ]
   },
   {
     "SkillId":"Cold_Death",
     "SectionId":3,
     "DepthLevel":2,
-    "RequiredSkillIds":["Master_Of_Ice"]
+    "RequiredSkillIds":[
+      "Master_Of_Ice"
+    ]
   },
   {
     "SkillId":"Sap_Magic",
     "SectionId":3,
     "DepthLevel":2,
-    "RequiredSkillIds":["Master_of_Storms"]
+    "RequiredSkillIds":[
+      "Master_of_Storms"
+    ]
   },
   {
     "SkillId":"Fiery_Wrath",
     "SectionId":3,
     "DepthLevel":3,
-    "RequiredSkillIds":["Secrets_Of_Destruction"]
+    "RequiredSkillIds":[
+      "Secrets_Of_Destruction"
+    ]
   },
   {
     "SkillId":"Ignite",
     "SectionId":3,
     "DepthLevel":3,
-    "RequiredSkillIds":["Secrets_Of_Destruction"]
+    "RequiredSkillIds":[
+      "Secrets_Of_Destruction"
+    ]
   },
   {
     "SkillId":"Basic_Summoning_Magic",
     "SectionId":4,
     "DepthLevel":0,
-    "RequiredSkillIds":[]
+    "RequiredSkillIds":[
+
+    ]
   },
   {
     "SkillId":"Advanced_Summoning_Magic",
     "SectionId":4,
     "DepthLevel":0,
-    "RequiredSkillIds":["Basic_Summoning_Magic"]
+    "RequiredSkillIds":[
+      "Basic_Summoning_Magic"
+    ]
   },
   {
     "SkillId":"Expert_Summoning_Magic",
     "SectionId":4,
     "DepthLevel":0,
-    "RequiredSkillIds":["Advanced_Summoning_Magic"]
+    "RequiredSkillIds":[
+      "Advanced_Summoning_Magic"
+    ]
   },
   {
     "SkillId":"Master_of_Conjuration",
     "SectionId":4,
     "DepthLevel":1,
-    "RequiredSkillIds":[]
+    "RequiredSkillIds":[
+
+    ]
   },
   {
     "SkillId":"Master_of_Earthblood",
     "SectionId":4,
     "DepthLevel":1,
-    "RequiredSkillIds":[]
+    "RequiredSkillIds":[
+
+    ]
   },
   {
     "SkillId":"Master_of_Life",
     "SectionId":4,
     "DepthLevel":1,
-    "RequiredSkillIds":[]
+    "RequiredSkillIds":[
+
+    ]
   },
   {
     "SkillId":"Exorcism",
     "SectionId":4,
     "DepthLevel":1,
-    "RequiredSkillIds":["Imbue_Arrow"]
+    "RequiredSkillIds":[
+      "Imbue_Arrow"
+    ]
   },
   {
     "SkillId":"Elemental_Balance",
     "SectionId":4,
     "DepthLevel":2,
-    "RequiredSkillIds":["Master_of_Conjuration"]
+    "RequiredSkillIds":[
+      "Master_of_Conjuration"
+    ]
   },
   {
     "SkillId":"Banish",
     "SectionId":4,
     "DepthLevel":2,
-    "RequiredSkillIds":["Master_of_Conjuration"]
+    "RequiredSkillIds":[
+      "Master_of_Conjuration"
+    ]
   },
   {
     "SkillId":"Fire_Warriors",
     "SectionId":4,
     "DepthLevel":2,
-    "RequiredSkillIds":["Master_of_Conjuration"]
+    "RequiredSkillIds":[
+      "Master_of_Conjuration"
+    ]
   },
   {
     "SkillId":"Fog_Veil",
     "SectionId":4,
     "DepthLevel":2,
-    "RequiredSkillIds":["Master_of_Earthblood"]
+    "RequiredSkillIds":[
+      "Master_of_Earthblood"
+    ]
   },
   {
     "SkillId":"Basic_Sorcery",
     "SectionId":5,
     "DepthLevel":0,
-    "RequiredSkillIds":[]
+    "RequiredSkillIds":[
+
+    ]
   },
   {
     "SkillId":"Advanced_Sorcery",
     "SectionId":5,
     "DepthLevel":0,
-    "RequiredSkillIds":["Basic_Sorcery"]
+    "RequiredSkillIds":[
+      "Basic_Sorcery"
+    ]
   },
   {
     "SkillId":"Expert_Sorcery",
     "SectionId":5,
     "DepthLevel":0,
-    "RequiredSkillIds":["Advanced_Sorcery"]
+    "RequiredSkillIds":[
+      "Advanced_Sorcery"
+    ]
   },
   {
     "SkillId":"Magic_Insight",
     "SectionId":5,
     "DepthLevel":1,
-    "RequiredSkillIds":[]
+    "RequiredSkillIds":[
+
+    ]
   },
   {
     "SkillId":"Arcane_Training",
     "SectionId":5,
     "DepthLevel":1,
-    "RequiredSkillIds":[]
+    "RequiredSkillIds":[
+
+    ]
   },
   {
     "SkillId":"Mana_Regeneration",
     "SectionId":5,
     "DepthLevel":1,
-    "RequiredSkillIds":[]
+    "RequiredSkillIds":[
+
+    ]
   },
   {
     "SkillId":"Dark_Revelation",
     "SectionId":5,
     "DepthLevel":2,
-    "RequiredSkillIds":["Magic_Insight"]
+    "RequiredSkillIds":[
+      "Magic_Insight"
+    ]
   },
   {
     "SkillId":"Arcane_Excellence",
     "SectionId":5,
     "DepthLevel":2,
-    "RequiredSkillIds":["Arcane_Training"]
+    "RequiredSkillIds":[
+      "Arcane_Training"
+    ]
   },
   {
     "SkillId":"ErraticMana",
     "SectionId":5,
     "DepthLevel":2,
-    "RequiredSkillIds":["Mana_Regeneration"]
+    "RequiredSkillIds":[
+      "Mana_Regeneration"
+    ]
   },
   {
     "SkillId":"Distract",
     "SectionId":5,
     "DepthLevel":3,
-    "RequiredSkillIds":["Dark_Revelation"]
+    "RequiredSkillIds":[
+      "Dark_Revelation"
+    ]
   },
   {
     "SkillId":"Counterspell",
     "SectionId":5,
     "DepthLevel":3,
-    "RequiredSkillIds":["Arcane_Training","Mana_Regeneration"]
+    "RequiredSkillIds":[
+      "Arcane_Training",
+      "Mana_Regeneration"
+    ]
   },
   {
     "SkillId":"Basic_Attack",
     "SectionId":6,
     "DepthLevel":0,
-    "RequiredSkillIds":[]
+    "RequiredSkillIds":[
+
+    ]
   },
   {
     "SkillId":"Advanced_Attack",
     "SectionId":6,
     "DepthLevel":0,
-    "RequiredSkillIds":["Basic_Attack"]
+    "RequiredSkillIds":[
+      "Basic_Attack"
+    ]
   },
   {
     "SkillId":"Expert_Attack",
     "SectionId":6,
     "DepthLevel":0,
-    "RequiredSkillIds":["Advanced_Attack"]
+    "RequiredSkillIds":[
+      "Advanced_Attack"
+    ]
   },
   {
     "SkillId":"Archery",
     "SectionId":6,
     "DepthLevel":1,
-    "RequiredSkillIds":[]
+    "RequiredSkillIds":[
+
+    ]
   },
   {
     "SkillId":"Battle_Frenzy",
     "SectionId":6,
     "DepthLevel":1,
-    "RequiredSkillIds":[]
+    "RequiredSkillIds":[
+
+    ]
   },
   {
     "SkillId":"Tactics",
     "SectionId":6,
     "DepthLevel":1,
-    "RequiredSkillIds":[]
+    "RequiredSkillIds":[
+
+    ]
   },
   {
     "SkillId":"Cold_Steel",
     "SectionId":6,
     "DepthLevel":1,
-    "RequiredSkillIds":["Master_Of_Ice"]
+    "RequiredSkillIds":[
+      "Master_Of_Ice"
+    ]
   },
   {
     "SkillId":"Flaming_Arrows",
     "SectionId":6,
     "DepthLevel":2,
-    "RequiredSkillIds":["Archery"]
+    "RequiredSkillIds":[
+      "Archery"
+    ]
   },
   {
     "SkillId":"Nature's_Wrath",
     "SectionId":6,
     "DepthLevel":2,
-    "RequiredSkillIds":["Battle_Frenzy"]
+    "RequiredSkillIds":[
+      "Battle_Frenzy"
+    ]
   },
   {
     "SkillId":"Power_of_Speed",
     "SectionId":6,
     "DepthLevel":2,
-    "RequiredSkillIds":["Battle_Frenzy"]
+    "RequiredSkillIds":[
+      "Battle_Frenzy"
+    ]
   },
   {
     "SkillId":"Retribution",
     "SectionId":6,
     "DepthLevel":2,
-    "RequiredSkillIds":["Battle_Frenzy","Rain_of_Arrows","Battle_Commander"]
+    "RequiredSkillIds":[
+      "Battle_Frenzy",
+      "Rain_of_Arrows",
+      "Battle_Commander"
+    ]
   },
   {
     "SkillId":"Basic_Defense",
     "SectionId":7,
     "DepthLevel":0,
-    "RequiredSkillIds":[]
+    "RequiredSkillIds":[
+
+    ]
   },
   {
     "SkillId":"Advanced_Defense",
     "SectionId":7,
     "DepthLevel":0,
-    "RequiredSkillIds":["Basic_Defense"]
+    "RequiredSkillIds":[
+      "Basic_Defense"
+    ]
   },
   {
     "SkillId":"Expert_Defense",
     "SectionId":7,
     "DepthLevel":0,
-    "RequiredSkillIds":["Advanced_Defense"]
+    "RequiredSkillIds":[
+      "Advanced_Defense"
+    ]
   },
   {
     "SkillId":"Evasion",
     "SectionId":7,
     "DepthLevel":1,
-    "RequiredSkillIds":[]
+    "RequiredSkillIds":[
+
+    ]
   },
   {
     "SkillId":"Protection",
     "SectionId":7,
     "DepthLevel":1,
-    "RequiredSkillIds":[]
+    "RequiredSkillIds":[
+
+    ]
   },
   {
     "SkillId":"Vitality",
     "SectionId":7,
     "DepthLevel":1,
-    "RequiredSkillIds":[]
+    "RequiredSkillIds":[
+
+    ]
   },
   {
     "SkillId":"Last_Stand",
     "SectionId":7,
     "DepthLevel":2,
-    "RequiredSkillIds":["Evasion"]
+    "RequiredSkillIds":[
+      "Evasion"
+    ]
   },
   {
     "SkillId":"Resistance",
     "SectionId":7,
     "DepthLevel":2,
-    "RequiredSkillIds":["Protection"]
+    "RequiredSkillIds":[
+      "Protection"
+    ]
   },
   {
     "SkillId":"Power_Of_Endurance",
     "SectionId":7,
     "DepthLevel":2,
-    "RequiredSkillIds":["Vitality"]
+    "RequiredSkillIds":[
+      "Vitality"
+    ]
   },
   {
     "SkillId":"Stand_Your_Ground",
     "SectionId":7,
     "DepthLevel":2,
-    "RequiredSkillIds":["Vitality"]
+    "RequiredSkillIds":[
+      "Vitality"
+    ]
   },
   {
     "SkillId":"Preparation",
     "SectionId":7,
     "DepthLevel":3,
-    "RequiredSkillIds":["Stand_Your_Ground","Tactics"]
+    "RequiredSkillIds":[
+      "Stand_Your_Ground",
+      "Tactics"
+    ]
   },
   {
     "SkillId":"Basic_Luck",
     "SectionId":8,
     "DepthLevel":0,
-    "RequiredSkillIds":[]
+    "RequiredSkillIds":[
+
+    ]
   },
   {
     "SkillId":"Advanced_Luck",
     "SectionId":8,
     "DepthLevel":0,
-    "RequiredSkillIds":["Basic_Luck"]
+    "RequiredSkillIds":[
+      "Basic_Luck"
+    ]
   },
   {
     "SkillId":"Expert_Luck",
     "SectionId":8,
     "DepthLevel":0,
-    "RequiredSkillIds":["Advanced_Luck"]
+    "RequiredSkillIds":[
+      "Advanced_Luck"
+    ]
   },
   {
     "SkillId":"Resistance",
     "SectionId":8,
     "DepthLevel":1,
-    "RequiredSkillIds":[]
+    "RequiredSkillIds":[
+
+    ]
   },
   {
     "SkillId":"Resourcefulness",
     "SectionId":8,
     "DepthLevel":1,
-    "RequiredSkillIds":[]
+    "RequiredSkillIds":[
+
+    ]
   },
   {
     "SkillId":"Soldier's_Luck",
     "SectionId":8,
     "DepthLevel":1,
-    "RequiredSkillIds":[]
+    "RequiredSkillIds":[
+
+    ]
   },
   {
     "SkillId":"Spoils_of_War",
     "SectionId":8,
     "DepthLevel":2,
-    "RequiredSkillIds":["Resourcefulness"]
+    "RequiredSkillIds":[
+      "Resourcefulness"
+    ]
   },
   {
     "SkillId":"Tear_of_Asha_Vision",
     "SectionId":8,
     "DepthLevel":2,
-    "RequiredSkillIds":["Resourcefulness"]
+    "RequiredSkillIds":[
+      "Resourcefulness"
+    ]
   },
   {
     "SkillId":"Warlocks_Luck",
     "SectionId":8,
     "DepthLevel":2,
-    "RequiredSkillIds":["Soldier's_Luck","Dark_Revelation"]
+    "RequiredSkillIds":[
+      "Soldier's_Luck",
+      "Dark_Revelation"
+    ]
   },
   {
     "SkillId":"Elven_Luck",
     "SectionId":8,
     "DepthLevel":3,
-    "RequiredSkillIds":["Soldier's_Luck","Resourcefulness","Rain_of_Arrows"]
+    "RequiredSkillIds":[
+      "Soldier's_Luck",
+      "Resourcefulness",
+      "Rain_of_Arrows"
+    ]
   },
   {
     "SkillId":"Basic_Leadership",
     "SectionId":9,
     "DepthLevel":0,
-    "RequiredSkillIds":[]
+    "RequiredSkillIds":[
+
+    ]
   },
   {
     "SkillId":"Advanced_Leadership",
     "SectionId":9,
     "DepthLevel":0,
-    "RequiredSkillIds":["Basic_Leadership"]
+    "RequiredSkillIds":[
+      "Basic_Leadership"
+    ]
   },
   {
     "SkillId":"Expert_Leadership",
     "SectionId":9,
     "DepthLevel":0,
-    "RequiredSkillIds":["Advanced_Leadership"]
+    "RequiredSkillIds":[
+      "Advanced_Leadership"
+    ]
   },
   {
     "SkillId":"Diplomacy",
     "SectionId":9,
     "DepthLevel":1,
-    "RequiredSkillIds":[]
+    "RequiredSkillIds":[
+
+    ]
   },
   {
     "SkillId":"Estates",
     "SectionId":9,
     "DepthLevel":1,
-    "RequiredSkillIds":[]
+    "RequiredSkillIds":[
+
+    ]
   },
   {
     "SkillId":"Recruitment",
     "SectionId":9,
     "DepthLevel":1,
-    "RequiredSkillIds":[]
+    "RequiredSkillIds":[
+
+    ]
   },
   {
     "SkillId":"Empathy",
     "SectionId":9,
     "DepthLevel":2,
-    "RequiredSkillIds":["Diplomacy"]
+    "RequiredSkillIds":[
+      "Diplomacy"
+    ]
   },
   {
     "SkillId":"Aura_of_Swiftness",
     "SectionId":9,
     "DepthLevel":2,
-    "RequiredSkillIds":["Recruitment"]
+    "RequiredSkillIds":[
+      "Recruitment"
+    ]
   },
   {
     "SkillId":"Battle_Commander",
     "SectionId":9,
     "DepthLevel":2,
-    "RequiredSkillIds":["Recruitment"]
+    "RequiredSkillIds":[
+      "Recruitment"
+    ]
   },
   {
     "SkillId":"Divine_Guidance",
     "SectionId":9,
     "DepthLevel":3,
-    "RequiredSkillIds":["Battle_Commander"]
+    "RequiredSkillIds":[
+      "Battle_Commander"
+    ]
   },
   {
     "SkillId":"Basic_Logistics",
     "SectionId":10,
     "DepthLevel":0,
-    "RequiredSkillIds":[]
+    "RequiredSkillIds":[
+
+    ]
   },
   {
     "SkillId":"Advanced_Logistics",
     "SectionId":10,
     "DepthLevel":0,
-    "RequiredSkillIds":["Basic_Logistics"]
+    "RequiredSkillIds":[
+      "Basic_Logistics"
+    ]
   },
   {
     "SkillId":"Expert_Logistics",
     "SectionId":10,
     "DepthLevel":0,
-    "RequiredSkillIds":["Advanced_Logistics"]
+    "RequiredSkillIds":[
+      "Advanced_Logistics"
+    ]
   },
   {
     "SkillId":"Navigation",
     "SectionId":10,
     "DepthLevel":1,
-    "RequiredSkillIds":[]
+    "RequiredSkillIds":[
+
+    ]
   },
   {
     "SkillId":"Pathfinding",
     "SectionId":10,
     "DepthLevel":1,
-    "RequiredSkillIds":[]
+    "RequiredSkillIds":[
+
+    ]
   },
   {
     "SkillId":"Silent_Stalker",
     "SectionId":10,
     "DepthLevel":1,
-    "RequiredSkillIds":["Deadeye_Shot"]
+    "RequiredSkillIds":[
+      "Deadeye_Shot"
+    ]
   },
   {
     "SkillId":"Scouting",
     "SectionId":10,
     "DepthLevel":1,
-    "RequiredSkillIds":[]
+    "RequiredSkillIds":[
+
+    ]
   },
   {
     "SkillId":"Warpath",
     "SectionId":10,
     "DepthLevel":2,
-    "RequiredSkillIds":["Pathfinding"]
+    "RequiredSkillIds":[
+      "Pathfinding"
+    ]
   },
   {
     "SkillId":"Death_March",
     "SectionId":10,
     "DepthLevel":2,
-    "RequiredSkillIds":["Pathfinding"]
+    "RequiredSkillIds":[
+      "Pathfinding"
+    ]
   },
   {
     "SkillId":"Swift_Mind",
     "SectionId":10,
     "DepthLevel":2,
-    "RequiredSkillIds":["Scouting"]
+    "RequiredSkillIds":[
+      "Scouting"
+    ]
   },
   {
     "SkillId":"Familiar_Ground",
     "SectionId":10,
     "DepthLevel":3,
-    "RequiredSkillIds":["Pathfinding","Silent_Stalker"]
+    "RequiredSkillIds":[
+      "Pathfinding",
+      "Silent_Stalker"
+    ]
   },
   {
     "SkillId":"Snatch",
     "SectionId":10,
     "DepthLevel":3,
-    "RequiredSkillIds":["Pathfinding","Silent_Stalker"]
+    "RequiredSkillIds":[
+      "Pathfinding",
+      "Silent_Stalker"
+    ]
   },
   {
     "SkillId":"Basic_Enlightenment",
     "SectionId":11,
     "DepthLevel":0,
-    "RequiredSkillIds":[]
+    "RequiredSkillIds":[
+
+    ]
   },
   {
     "SkillId":"Advanced_Enlightenment",
     "SectionId":11,
     "DepthLevel":0,
-    "RequiredSkillIds":["Basic_Enlightenment"]
+    "RequiredSkillIds":[
+      "Basic_Enlightenment"
+    ]
   },
   {
     "SkillId":"Expert_Enlightenment",
     "SectionId":11,
     "DepthLevel":0,
-    "RequiredSkillIds":["Advanced_Enlightenment"]
+    "RequiredSkillIds":[
+      "Advanced_Enlightenment"
+    ]
   },
   {
     "SkillId":"Arcane_Intuition",
     "SectionId":11,
     "DepthLevel":1,
-    "RequiredSkillIds":[]
+    "RequiredSkillIds":[
+
+    ]
   },
   {
     "SkillId":"Intelligence",
     "SectionId":11,
     "DepthLevel":1,
-    "RequiredSkillIds":[]
+    "RequiredSkillIds":[
+
+    ]
   },
   {
     "SkillId":"Scholar",
     "SectionId":11,
     "DepthLevel":1,
-    "RequiredSkillIds":[]
+    "RequiredSkillIds":[
+
+    ]
   },
   {
     "SkillId":"Know_Your_Enemy",
     "SectionId":11,
     "DepthLevel":2,
-    "RequiredSkillIds":["Arcane_Intuition"]
+    "RequiredSkillIds":[
+      "Arcane_Intuition"
+    ]
   },
   {
     "SkillId":"Graduate",
     "SectionId":11,
     "DepthLevel":2,
-    "RequiredSkillIds":["Intelligence"]
+    "RequiredSkillIds":[
+      "Intelligence"
+    ]
   },
   {
     "SkillId":"Wizards_Reward",
     "SectionId":11,
     "DepthLevel":2,
-    "RequiredSkillIds":["Intelligence"]
+    "RequiredSkillIds":[
+      "Intelligence"
+    ]
   },
   {
     "SkillId":"Arcane_Exaltation",
     "SectionId":11,
     "DepthLevel":2,
-    "RequiredSkillIds":["Scholar"]
+    "RequiredSkillIds":[
+      "Scholar"
+    ]
   },
   {
     "SkillId":"Mentoring",
     "SectionId":11,
     "DepthLevel":3,
-    "RequiredSkillIds":["Intelligence","Scholar"]
+    "RequiredSkillIds":[
+      "Intelligence",
+      "Scholar"
+    ]
   },
   {
     "SkillId":"Basic_War_Machines",
     "SectionId":12,
     "DepthLevel":0,
-    "RequiredSkillIds":[]
+    "RequiredSkillIds":[
+
+    ]
   },
   {
     "SkillId":"Advanced_War_Machines",
     "SectionId":12,
     "DepthLevel":0,
-    "RequiredSkillIds":["Basic_War_Machines"]
+    "RequiredSkillIds":[
+      "Basic_War_Machines"
+    ]
   },
   {
     "SkillId":"Expert_War_Machines",
     "SectionId":12,
     "DepthLevel":0,
-    "RequiredSkillIds":["Advanced_War_Machines"]
+    "RequiredSkillIds":[
+      "Advanced_War_Machines"
+    ]
   },
   {
     "SkillId":"Ballista",
     "SectionId":12,
     "DepthLevel":1,
-    "RequiredSkillIds":[]
+    "RequiredSkillIds":[
+
+    ]
   },
   {
     "SkillId":"Catapult",
     "SectionId":12,
     "DepthLevel":1,
-    "RequiredSkillIds":[]
+    "RequiredSkillIds":[
+
+    ]
   },
   {
     "SkillId":"First_Aid",
     "SectionId":12,
     "DepthLevel":1,
-    "RequiredSkillIds":[]
+    "RequiredSkillIds":[
+
+    ]
   },
   {
     "SkillId":"Triple_Ballista",
     "SectionId":12,
     "DepthLevel":2,
-    "RequiredSkillIds":["Ballista"]
+    "RequiredSkillIds":[
+      "Ballista"
+    ]
   },
   {
     "SkillId":"Imbue_Ballista",
     "SectionId":12,
     "DepthLevel":2,
-    "RequiredSkillIds":["Ballista","Imbue_Arrow"]
+    "RequiredSkillIds":[
+      "Ballista",
+      "Imbue_Arrow"
+    ]
   },
   {
     "SkillId":"Brimstone_Rain",
     "SectionId":12,
     "DepthLevel":2,
-    "RequiredSkillIds":["Catapult"]
+    "RequiredSkillIds":[
+      "Catapult"
+    ]
   }
 ]
