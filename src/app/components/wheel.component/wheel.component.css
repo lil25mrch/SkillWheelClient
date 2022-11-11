@@ -1,17 +1,24 @@
-﻿.header_container {
+﻿.container {
+  width: 790px;
+  height: 790px;
+  position: absolute;
+  margin-left: 30%;
+}
+
+.header_container {
   width: 100%;
   height: 80px;
   box-sizing: border-box;
-  background-color: silver;
-  border: 5px solid darkslategrey;
+  display: inline-block;
+  background-color: #131313;
 }
 
 .wheel_container {
   width: 100%;
   height: 100%;
-  position: relative;
+  position: absolute;
   display: flex;
-  background-color: darkslategrey;
+  background-color: #131313;
 }
 
 .circle {
@@ -31,7 +38,6 @@ p {
   width: 100%;
   left: 0;
   top: 0;
-  background-color: whitesmoke;
 }
 
 .second-c {
@@ -40,7 +46,8 @@ p {
   left: 8.5%;
   top: 8.5%;
   position: absolute;
-  background-color: darkseagreen;
+  background-color: whitesmoke;
+  box-shadow: 0 0 3px rgba(48, 60, 171, 0.5);
 }
 
 .third-c {
@@ -49,8 +56,8 @@ p {
   left: 16%;
   top: 16%;
   position: absolute;
-  /*z-index: 2;*/
-  background-color: slategray;
+  background-color: #b0acac;
+  box-shadow: 0 0 30px rgba(48, 60, 171, 0.5);
 }
 
 .fourth-c {
@@ -59,16 +66,18 @@ p {
   left: 23.6%;
   top: 23.6%;
   position: absolute;
-  background-color: cadetblue;
+  background-color: #485151;
+  box-shadow: 0 0 30px rgba(48, 60, 171, 0.5);
 }
 
 .central-c {
-  height: 39%;
-  width: 40%;
-  left: 30.5%;
-  top: 29.5%;
+  height: 36%;
+  width: 36%;
+  left: 32%;
+  top: 32%;
   position: absolute;
-  background-color: ghostwhite;
+  background-color: #131313;
+  box-shadow: 0 0 9px rgba(48, 60, 171, 0.5);
   z-index: 5;
 }
 
@@ -87,6 +96,8 @@ p {
 .central_image {
   height: 65%;
   width: 65%;
+  -webkit-filter: drop-shadow(2px 2px 2px #d9d2bf);
+  filter: drop-shadow(2px 2px 2px #d9d2bf);
 }
 
 .not_selected {
@@ -96,6 +107,8 @@ p {
 .image {
   height: 100%;
   width: 100%;
+  -webkit-filter: drop-shadow(2px 2px 2px #d9d2bf);
+  filter: drop-shadow(2px 2px 2px #d9d2bf);
 }
 
 div .spell:hover {
@@ -168,16 +181,22 @@ div .spell:hover .tooltip {
   margin: 3px;
 }
 
+.spell_third_circle_one {
+  /*to do*/
+  height: 8.1%;
+  width: 8.1%;
+  margin: 3px;
+}
+
 .spell_internal {
   height: 10%;
   width: 10%;
 }
 
 .circle_color {
-  opacity: 0.1;
+  opacity: 0.4;
   list-style: none;
   overflow: hidden;
-  z-index: 1;
 }
 
 .color-c {
@@ -185,76 +204,66 @@ div .spell:hover .tooltip {
   width: 83%;
   left: 8.5%;
   top: 8.5%;
+  box-shadow: 0 0 90px darkviolet;
   position: absolute;
-  background-color: darkseagreen;
 }
 
 li {
   overflow: hidden;
   position: absolute;
-  opacity: 0.9;
   top: 0;
   right: 0;
   width: 50%;
   height: 50%;
   transform-origin: 0 100%;
-  border-left: 1px groove black;
+  border-left: 2px solid #131313;
 }
 
-.text {
-  position: absolute;
-  left: -100%;
-  width: 200%;
-  height: 200%;
-  text-align: center;
-  transform: skewY(60deg) rotate(15deg);
-  padding-top: 20px;
-}
 li:first-child {
-  background: #ea4303;
+  background: yellow;
   transform: rotate(0deg) skewY(-60deg);
 }
 li:nth-child(2) {
-  background: #856d04;
+  background: #ae2978;
   transform: rotate(30deg) skewY(-60deg);
 }
 li:nth-child(3) {
-  background: aqua;
+  background: rgba(217, 78, 74, 0.5);
   transform: rotate(60deg) skewY(-60deg);
 }
 li:nth-child(4) {
-  background: yellow;
+  background: forestgreen;
   transform: rotate(90deg) skewY(-60deg);
 }
 li:nth-child(5) {
-  background: #383838;
+  background: darkblue;
   transform: rotate(120deg) skewY(-60deg);
 }
 li:nth-child(6) {
-  background: purple;
+  background: darkred;
   transform: rotate(150deg) skewY(-60deg);
 }
 li:nth-child(7) {
-  background: cyan;
+  background: dodgerblue;
   transform: rotate(180deg) skewY(-60deg);
 }
 li:nth-child(8) {
-  background: brown;
+  background:  #ffea46;
   transform: rotate(210deg) skewY(-60deg);
 }
 li:nth-child(9) {
-  background: gray;
+  background: #4d9d37;
   transform: rotate(240deg) skewY(-60deg);
 }
 li:nth-child(10) {
-  background: pink;
+  background: sandybrown;
   transform: rotate(270deg) skewY(-60deg);
 }
 li:nth-child(11) {
-  background: maroon;
+  background: gainsboro;
   transform: rotate(300deg) skewY(-60deg);
 }
 li:nth-child(12) {
-  background: gold;
+  background: coral;
   transform: rotate(330deg) skewY(-60deg);
 }

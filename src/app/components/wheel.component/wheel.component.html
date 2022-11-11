@@ -8,243 +8,242 @@
 <button (click)="createWheel(races.magi)">Magi</button>
 <button (click)="createWheel(races.varvars)">Varvars</button>
 <button (click)="reset()">RESET</button>
-<div class="header_container">
-  <div *ngFor="let spell of structure.sections[0].level_depth[0].spells"
-       class="spell central_spell"
-       style="{{spell.style}}">
-    <div class="tooltip" *ngIf="spellHasName(spell)">
-      <img src="assets/{{spell.image}}" class="image">
-      <span class="tooltiptext">{{spell.description}}</span>
+<div class="container">
+  <div class="header_container">
+    <div *ngFor="let spell of structure.sections[0].level_depth[0].spells"
+         class="spell central_spell"
+         style="{{spell.style}}">
+      <div class="tooltip" *ngIf="spellHasName(spell)">
+        <img src="assets/{{spell.image}}" class="image">
+        <span class="tooltiptext">{{spell.description}}</span>
+      </div>
     </div>
   </div>
-</div>
-<div class="wheel_container">
-  <div class="circle main-c">
-    <div *ngFor="let section of filterSection(); let index = index;trackBy:trackById;">
-      <div *ngFor="let levelDepth of section.level_depth">
-        <div *ngIf="levelDepth.id == 0">
-          <div *ngFor="let spell of levelDepth.spells"
-               class="spell outside_spell"
-               [hidden]="isSpellHide(spell)"
-               [class.not_selected]="isSpellNotSelected(spell)"
-               [class.selected]="isSpellSelected(spell)"
-               (click)="clickOutsideSpell(spell, levelDepth.spells)"
-               style="{{spell.style}}">
-            <div class="tooltip" *ngIf="spellHasName(spell)">
-              <img src="assets/{{spell.image}}" class="image">
-              <span class="tooltiptext">{{spell.description}}</span>
-            </div>
-          </div>
-        </div>
-
-        <div class="circle second-c" *ngIf="levelDepth.id == 1">
-          <div *ngFor="let spell of levelDepth.spells">
-            <div *ngIf="levelDepth.count == 3">
-              <div class="spell spell_first_circle_three"
-                   [hidden]="isSpellHide(spell)"
-                   [class.not_selected]="isSpellNotSelected(spell)"
-                   [class.selected]="isSpellSelected(spell)"
-                   (click)="clickInsideSpell(spell, section)"
-                   style="{{spell.style}}">
-                <div class="tooltip" *ngIf="spellHasName(spell)">
-                  <img src="assets/{{spell.image}}" class="image">
-                  <span class="tooltiptext">{{spell.description}}</span>
-                </div>
-              </div>
-            </div>
-            <div *ngIf="levelDepth.count == 4">
-              <div class="spell spell_first_circle_four"
-                   [hidden]="isSpellHide(spell)"
-                   [class.not_selected]="isSpellNotSelected(spell)"
-                   [class.selected]="isSpellSelected(spell)"
-                   (click)="clickInsideSpell(spell, section)"
-                   style="{{spell.style}}">
-                <div class="tooltip" *ngIf="spellHasName(spell)">
-                  <img src="assets/{{spell.image}}" class="image">
-                  <span class="tooltiptext">{{spell.description}}</span>
-                </div>
-              </div>
-            </div>
-            <div *ngIf="levelDepth.count == 5">
-              <div class="spell spell_first_circle_five"
-                   [hidden]="isSpellHide(spell)"
-                   [class.not_selected]="isSpellNotSelected(spell)"
-                   [class.selected]="isSpellSelected(spell)"
-                   (click)="clickInsideSpell(spell, section)"
-                   style="{{spell.style}}">
-                <div class="tooltip" *ngIf="spellHasName(spell)">
-                  <img src="assets/{{spell.image}}" class="image">
-                  <span class="tooltiptext">{{spell.description}}</span>
-                </div>
+  <div class="wheel_container">
+    <div class="circle main-c">
+      <div *ngFor="let section of filterSection(); let index = index;trackBy:trackById;" style="z-index: 1">
+        <div *ngFor="let levelDepth of section.level_depth">
+          <div *ngIf="levelDepth.id == 0">
+            <div *ngFor="let spell of levelDepth.spells"
+                 class="spell outside_spell"
+                 [hidden]="isSpellHide(spell)"
+                 [class.not_selected]="isSpellNotSelected(spell)"
+                 [class.selected]="isSpellSelected(spell)"
+                 (click)="clickOutsideSpell(spell, levelDepth.spells)"
+                 style="{{spell.style}}">
+              <div class="tooltip" *ngIf="spellHasName(spell)">
+                <img src="assets/{{spell.image}}" class="image">
+                <span class="tooltiptext">{{spell.description}}</span>
               </div>
             </div>
           </div>
-        </div>
-
-        <div class="circle third-c" *ngIf="levelDepth.id == 2 && section.section_id != 0">
-          <div *ngFor="let spell of levelDepth.spells">
-            <div *ngIf="levelDepth.count == 1">
-              <div class="spell spell_second_circle_first"
-                   [hidden]="isSpellHide(spell)"
-                   [class.not_selected]="isSpellNotSelected(spell)"
-                   [class.selected]="isSpellSelected(spell)"
-                   (click)="clickInsideSpell(spell, section)"
-                   style="{{spell.style}}">
-                <div class="tooltip" *ngIf="spellHasName(spell)">
-                  <img src="assets/{{spell.image}}" class="image">
-                  <span class="tooltiptext">{{spell.description}}</span>
+          <div class="circle second-c" *ngIf="levelDepth.id == 1">
+            <div *ngFor="let spell of levelDepth.spells">
+              <div *ngIf="levelDepth.count == 3">
+                <div class="spell spell_first_circle_three" *ngIf="spellHasName(spell)"
+                     [hidden]="isSpellHide(spell)"
+                     [class.not_selected]="isSpellNotSelected(spell)"
+                     [class.selected]="isSpellSelected(spell)"
+                     (click)="clickInsideSpell(spell, section)"
+                     style="{{spell.style}}">
+                  <div class="tooltip">
+                    <img src="assets/{{spell.image}}" class="image">
+                    <span class="tooltiptext">{{spell.description}}</span>
+                  </div>
                 </div>
               </div>
-            </div>
-            <div *ngIf="levelDepth.count == 2" >
-              <div class="spell spell_second_circle_two"
-                   [hidden]="isSpellHide(spell)"
-                   [class.not_selected]="isSpellNotSelected(spell)"
-                   [class.selected]="isSpellSelected(spell)"
-                   (click)="clickInsideSpell(spell, section)"
-                   style="{{spell.style}}">
-                <div class="tooltip" *ngIf="spellHasName(spell)">
-                  <img src="assets/{{spell.image}}" class="image">
-                  <span class="tooltiptext">{{spell.description}}</span>
+              <div *ngIf="levelDepth.count == 4">
+                <div class="spell spell_first_circle_four" *ngIf="spellHasName(spell)"
+                     [hidden]="isSpellHide(spell)"
+                     [class.not_selected]="isSpellNotSelected(spell)"
+                     [class.selected]="isSpellSelected(spell)"
+                     (click)="clickInsideSpell(spell, section)"
+                     style="{{spell.style}}">
+                  <div class="tooltip">
+                    <img src="assets/{{spell.image}}" class="image">
+                    <span class="tooltiptext">{{spell.description}}</span>
+                  </div>
                 </div>
               </div>
-            </div>
-            <div *ngIf="levelDepth.count == 3" >
-              <div class="spell spell_first_circle_three"
-                   [hidden]="isSpellHide(spell)"
-                   [class.not_selected]="isSpellNotSelected(spell)"
-                   [class.selected]="isSpellSelected(spell)"
-                   (click)="clickInsideSpell(spell, section)"
-                   style="{{spell.style}}">
-                <div class="tooltip" *ngIf="spellHasName(spell)">
-                  <img src="assets/{{spell.image}}" class="image">
-                  <span class="tooltiptext">{{spell.description}}</span>
-                </div>
-              </div>
-            </div>
-            <div *ngIf="levelDepth.count == 4">
-              <div class="spell spell_first_circle_four"
-                   [hidden]="isSpellHide(spell)"
-                   [class.not_selected]="isSpellNotSelected(spell)"
-                   [class.selected]="isSpellSelected(spell)"
-                   (click)="clickInsideSpell(spell, section)"
-                   style="{{spell.style}}">
-                <div class="tooltip" *ngIf="spellHasName(spell)">
-                  <img src="assets/{{spell.image}}" class="image">
-                  <span class="tooltiptext">{{spell.description}}</span>
-                </div>
-              </div>
-            </div>
-            <div *ngIf="levelDepth.count == 5">
-              <div class="spell spell_first_circle_five"
-                   [hidden]="isSpellHide(spell)"
-                   [class.not_selected]="isSpellNotSelected(spell)"
-                   [class.selected]="isSpellSelected(spell)"
-                   (click)="clickInsideSpell(spell, section)"
-                   style="{{spell.style}}">
-                <div class="tooltip" *ngIf="spellHasName(spell)">
-                  <img src="assets/{{spell.image}}" class="image">
-                  <span class="tooltiptext">{{spell.description}}</span>
+              <div *ngIf="levelDepth.count == 5">
+                <div class="spell spell_first_circle_five" *ngIf="spellHasName(spell)"
+                     [hidden]="isSpellHide(spell)"
+                     [class.not_selected]="isSpellNotSelected(spell)"
+                     [class.selected]="isSpellSelected(spell)"
+                     (click)="clickInsideSpell(spell, section)"
+                     style="{{spell.style}}">
+                  <div class="tooltip">
+                    <img src="assets/{{spell.image}}" class="image">
+                    <span class="tooltiptext">{{spell.description}}</span>
+                  </div>
                 </div>
               </div>
             </div>
           </div>
-        </div>
-
-        <div class="circle fourth-c" *ngIf="levelDepth.id == 3 && section.section_id != 0">
-          <div *ngFor="let spell of levelDepth.spells">
-            <div *ngIf="levelDepth.count == 1" >
-              <div class="spell spell_second_circle_first"
-                   [hidden]="isSpellHide(spell)"
-                   [class.not_selected]="isSpellNotSelected(spell)"
-                   [class.selected]="isSpellSelected(spell)"
-                   (click)="clickInsideSpell(spell, section)"
-                   style="{{spell.style}}">
-                <div class="tooltip" *ngIf="spellHasName(spell)">
-                  <img src="assets/{{spell.image}}" class="image">
-                  <span class="tooltiptext">{{spell.description}}</span>
+          <div class="circle third-c" *ngIf="levelDepth.id == 2 && section.section_id != 0">
+            <div *ngFor="let spell of levelDepth.spells">
+              <div *ngIf="levelDepth.count == 1">
+                <div class="spell spell_second_circle_first" *ngIf="spellHasName(spell)"
+                     [hidden]="isSpellHide(spell)"
+                     [class.not_selected]="isSpellNotSelected(spell)"
+                     [class.selected]="isSpellSelected(spell)"
+                     (click)="clickInsideSpell(spell, section)"
+                     style="{{spell.style}}">
+                  <div class="tooltip">
+                    <img src="assets/{{spell.image}}" class="image">
+                    <span class="tooltiptext">{{spell.description}}</span>
+                  </div>
+                </div>
+              </div>
+              <div *ngIf="levelDepth.count == 2" >
+                <div class="spell spell_second_circle_two" *ngIf="spellHasName(spell)"
+                     [hidden]="isSpellHide(spell)"
+                     [class.not_selected]="isSpellNotSelected(spell)"
+                     [class.selected]="isSpellSelected(spell)"
+                     (click)="clickInsideSpell(spell, section)"
+                     style="{{spell.style}}">
+                  <div class="tooltip">
+                    <img src="assets/{{spell.image}}" class="image">
+                    <span class="tooltiptext">{{spell.description}}</span>
+                  </div>
+                </div>
+              </div>
+              <div *ngIf="levelDepth.count == 3" >
+                <div class="spell spell_first_circle_three" *ngIf="spellHasName(spell)"
+                     [hidden]="isSpellHide(spell)"
+                     [class.not_selected]="isSpellNotSelected(spell)"
+                     [class.selected]="isSpellSelected(spell)"
+                     (click)="clickInsideSpell(spell, section)"
+                     style="{{spell.style}}">
+                  <div class="tooltip">
+                    <img src="assets/{{spell.image}}" class="image">
+                    <span class="tooltiptext">{{spell.description}}</span>
+                  </div>
+                </div>
+              </div>
+              <div *ngIf="levelDepth.count == 4">
+                <div class="spell spell_first_circle_four" *ngIf="spellHasName(spell)"
+                     [hidden]="isSpellHide(spell)"
+                     [class.not_selected]="isSpellNotSelected(spell)"
+                     [class.selected]="isSpellSelected(spell)"
+                     (click)="clickInsideSpell(spell, section)"
+                     style="{{spell.style}}">
+                  <div class="tooltip">
+                    <img src="assets/{{spell.image}}" class="image">
+                    <span class="tooltiptext">{{spell.description}}</span>
+                  </div>
+                </div>
+              </div>
+              <div *ngIf="levelDepth.count == 5">
+                <div class="spell spell_first_circle_five" *ngIf="spellHasName(spell)"
+                     [hidden]="isSpellHide(spell)"
+                     [class.not_selected]="isSpellNotSelected(spell)"
+                     [class.selected]="isSpellSelected(spell)"
+                     (click)="clickInsideSpell(spell, section)"
+                     style="{{spell.style}}">
+                  <div class="tooltip">
+                    <img src="assets/{{spell.image}}" class="image">
+                    <span class="tooltiptext">{{spell.description}}</span>
+                  </div>
                 </div>
               </div>
             </div>
-            <div *ngIf="levelDepth.count == 2" >
-              <div class="spell spell_second_circle_two"
-                   [hidden]="isSpellHide(spell)"
-                   [class.not_selected]="isSpellNotSelected(spell)"
-                   [class.selected]="isSpellSelected(spell)"
-                   (click)="clickInsideSpell(spell, section)"
-                   style="{{spell.style}}">
-                <div class="tooltip" *ngIf="spellHasName(spell)">
-                  <img src="assets/{{spell.image}}" class="image">
-                  <span class="tooltiptext">{{spell.description}}</span>
+          </div>
+          <div class="circle fourth-c" *ngIf="levelDepth.id == 3 && section.section_id != 0">
+            <div *ngFor="let spell of levelDepth.spells">
+              <div *ngIf="levelDepth.count == 1" >
+                <div class="spell spell_third_circle_one" *ngIf="spellHasName(spell)"
+                     [hidden]="isSpellHide(spell)"
+                     [class.not_selected]="isSpellNotSelected(spell)"
+                     [class.selected]="isSpellSelected(spell)"
+                     (click)="clickInsideSpell(spell, section)"
+                     style="{{spell.style}}">
+                  <div class="tooltip">
+                    <img src="assets/{{spell.image}}" class="image">
+                    <span class="tooltiptext">{{spell.description}}</span>
+                  </div>
                 </div>
               </div>
-            </div>
-            <div *ngIf="levelDepth.count == 3" >
-              <div class="spell spell_first_circle_three"
-                   [hidden]="isSpellHide(spell)"
-                   [class.not_selected]="isSpellNotSelected(spell)"
-                   [class.selected]="isSpellSelected(spell)"
-                   (click)="clickInsideSpell(spell, section)"
-                   style="{{spell.style}}">
-                <div class="tooltip" *ngIf="spellHasName(spell)">
-                  <img src="assets/{{spell.image}}" class="image">
-                  <span class="tooltiptext">{{spell.description}}</span>
+              <div *ngIf="levelDepth.count == 2" >
+                <div class="spell spell_second_circle_two" *ngIf="spellHasName(spell)"
+                     [hidden]="isSpellHide(spell)"
+                     [class.not_selected]="isSpellNotSelected(spell)"
+                     [class.selected]="isSpellSelected(spell)"
+                     (click)="clickInsideSpell(spell, section)"
+                     style="{{spell.style}}">
+                  <div class="tooltip">
+                    <img src="assets/{{spell.image}}" class="image">
+                    <span class="tooltiptext">{{spell.description}}</span>
+                  </div>
                 </div>
               </div>
-            </div>
-            <div *ngIf="levelDepth.count == 4">
-              <div class="spell spell_first_circle_four"
-                   [hidden]="isSpellHide(spell)"
-                   [class.not_selected]="isSpellNotSelected(spell)"
-                   [class.selected]="isSpellSelected(spell)"
-                   (click)="clickInsideSpell(spell, section)"
-                   style="{{spell.style}}">
-                <div class="tooltip" *ngIf="spellHasName(spell)">
-                  <img src="assets/{{spell.image}}" class="image">
-                  <span class="tooltiptext">{{spell.description}}</span>
+              <div *ngIf="levelDepth.count == 3" >
+                <div class="spell spell_first_circle_three" *ngIf="spellHasName(spell)"
+                     [hidden]="isSpellHide(spell)"
+                     [class.not_selected]="isSpellNotSelected(spell)"
+                     [class.selected]="isSpellSelected(spell)"
+                     (click)="clickInsideSpell(spell, section)"
+                     style="{{spell.style}}">
+                  <div class="tooltip">
+                    <img src="assets/{{spell.image}}" class="image">
+                    <span class="tooltiptext">{{spell.description}}</span>
+                  </div>
                 </div>
               </div>
-            </div>
-            <div *ngIf="levelDepth.count == 5">
-              <div class="spell spell_first_circle_five"
-                   [hidden]="isSpellHide(spell)"
-                   [class.not_selected]="isSpellNotSelected(spell)"
-                   [class.selected]="isSpellSelected(spell)"
-                   (click)="clickInsideSpell(spell, section)"
-                   style="{{spell.style}}">
-                <div class="tooltip" *ngIf="spellHasName(spell)">
-                  <img src="assets/{{spell.image}}" class="image">
-                  <span class="tooltiptext">{{spell.description}}</span>
+              <div *ngIf="levelDepth.count == 4">
+                <div class="spell spell_first_circle_four" *ngIf="spellHasName(spell)"
+                     [hidden]="isSpellHide(spell)"
+                     [class.not_selected]="isSpellNotSelected(spell)"
+                     [class.selected]="isSpellSelected(spell)"
+                     (click)="clickInsideSpell(spell, section)"
+                     style="{{spell.style}}">
+                  <div class="tooltip">
+                    <img src="assets/{{spell.image}}" class="image">
+                    <span class="tooltiptext">{{spell.description}}</span>
+                  </div>
+                </div>
+              </div>
+              <div *ngIf="levelDepth.count == 5">
+                <div class="spell spell_first_circle_five" *ngIf="spellHasName(spell)"
+                     [hidden]="isSpellHide(spell)"
+                     [class.not_selected]="isSpellNotSelected(spell)"
+                     [class.selected]="isSpellSelected(spell)"
+                     (click)="clickInsideSpell(spell, section)"
+                     style="{{spell.style}}">
+                  <div class="tooltip">
+                    <img src="assets/{{spell.image}}" class="image">
+                    <span class="tooltiptext">{{spell.description}}</span>
+                  </div>
                 </div>
               </div>
             </div>
           </div>
         </div>
       </div>
-    </div>
-    <div class="circle central-c">
-      <div *ngFor="let spell of structure.sections[0].level_depth[1].spells"
-           class="spell central_spell"
-           style="{{spell.style}}">
-        <div class="tooltip" *ngIf="spellHasName(spell)">
-          <img src="assets/{{spell.image}}" class="central_image">
-          <span class="tooltiptext">{{spell.description}}</span>
+      <div class="circle central-c">
+        <div *ngFor="let spell of structure.sections[0].level_depth[1].spells"
+             class="spell central_spell"
+             style="{{spell.style}}">
+          <div class="tooltip" *ngIf="spellHasName(spell)">
+            <img src="assets/{{spell.image}}" class="central_image">
+            <span class="tooltiptext">{{spell.description}}</span>
+          </div>
+        </div>
+        <div *ngFor="let spell of structure.sections[0].level_depth[2].spells"
+             class="spell central_spell"
+             style="{{spell.style}}">
+          <div class="tooltip" *ngIf="spellHasName(spell)">
+            <img src="assets/{{spell.image}}" class="central_image">
+            <span class="tooltiptext">{{spell.description}}</span>
+          </div>
         </div>
       </div>
-      <div *ngFor="let spell of structure.sections[0].level_depth[2].spells"
-           class="spell central_spell"
-           style="{{spell.style}}">
-        <div class="tooltip" *ngIf="spellHasName(spell)">
-          <img src="assets/{{spell.image}}" class="central_image">
-          <span class="tooltiptext">{{spell.description}}</span>
-        </div>
+      <div class="circle circle_color color-c">
+        <ul>
+          <li *ngFor="let _ of [].constructor(12)">
+          </li>
+        </ul>
       </div>
-    </div>
-    <div class="circle circle_color color-c">
-      <ul>
-        <li *ngFor="let _ of [].constructor(12)">
-        </li>
-      </ul>
     </div>
   </div>
 </div>
