@@ -86,6 +86,7 @@ p {
   opacity: 1;
   border-radius: 50%;
   position: absolute;
+  cursor: pointer
 }
 
 .central_spell {
