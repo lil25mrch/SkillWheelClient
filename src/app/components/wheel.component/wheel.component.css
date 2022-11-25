@@ -38,6 +38,15 @@ p {
   width: 100%;
   left: 0;
   top: 0;
+  z-index: 2;
+}
+
+.main-b {
+  height: 100%;
+  width: 100%;
+  left: 0;
+  top: 0;
+  z-index: 1;
 }
 
 .second-c {
@@ -78,6 +87,14 @@ p {
   position: absolute;
   background-color: #131313;
   box-shadow: 0 0 9px rgba(48, 60, 171, 0.5);
+  z-index: 9;
+}
+
+.central-b {
+  height: 100%;
+  width: 100%;
+  background-color: #131313;
+  box-shadow: 0 0 9px rgba(48, 60, 171, 0.5);
   z-index: 5;
 }
 
@@ -90,19 +107,24 @@ p {
 }
 
 .central_spell {
-  z-index: 5;
-  position: relative;
+  height: 6.5%;
+  width: 6.5%;
+  z-index: 6;
 }
 
 .central_image {
-  height: 65%;
-  width: 65%;
+  width: 230%;
   -webkit-filter: drop-shadow(2px 2px 2px #d9d2bf);
   filter: drop-shadow(2px 2px 2px #d9d2bf);
 }
 
 .not_selected {
   filter: grayscale(100%);
+  opacity: 0.6;
+}
+
+.required {
+  filter: grayscale(100%) drop-shadow(2px 2px 2px darkviolet);
 }
 
 .image {
@@ -125,7 +147,7 @@ div .spell:hover .tooltip {
 .outside_spell {
   height: 6.25%;
   width: 6.25%;
-  margin: -1px 1px 3px -1px;;
+  margin: -1px 1px 3px -1px;
 }
 
 .tooltip {

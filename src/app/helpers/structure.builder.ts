@@ -8,11 +8,15 @@ export function structureBuild(structure:structureModel, race: typeof humans): s
     structure.sections[i].level_depth[0].spells.forEach((spell, index) => {
       if(spells_zero_lvl[index]) {
         let model = spellModel.find(id => spells_zero_lvl[index].SkillId == id.Id);
-        spell.spell_id = model?.Id;
+        spell.spell_id = model?.Id ?? "";
         spell.name = model?.Name;
         spell.description = model?.Description;
         spell.image = model?.Image;
         spell.state = "show";
+        spell.required_skills = spells_zero_lvl[index].RequiredSkillIds;
+        spell.required_skills.forEach(ds => structure.sections.forEach(s => s.level_depth.forEach(l => l.spells.filter(sp => {
+          spell.required_skills = sp.spell_id == ds ? spell.required_skills.concat(sp.required_skills) : spell.required_skills;
+        }))));
         if (i != 0 && spells_zero_lvl.length == 4) {
           spells_zero_lvl.length = 3
         }
@@ -32,10 +36,14 @@ export function structureBuild(structure:structureModel, race: typeof humans): s
         let model = spellModel.find(id => {
           return spells_first_lvl[index].SkillId == id.Id;
         });
-        spell.spell_id = model?.Id;
+        spell.spell_id = model?.Id ?? "";
         spell.name = model?.Name;
         spell.description = model?.Description;
         spell.image = model?.Image;
+        spell.required_skills = spells_first_lvl[index].RequiredSkillIds;
+        spell.required_skills.forEach(ds => structure.sections.forEach(s => s.level_depth.forEach(l => l.spells.filter(sp => {
+          spell.required_skills = sp.spell_id == ds ? spell.required_skills.concat(sp.required_skills) : spell.required_skills;
+        }))));
         spell.state = "show";
         switch (spells_first_lvl.length) {
           case 3: {
@@ -61,10 +69,14 @@ export function structureBuild(structure:structureModel, race: typeof humans): s
         let model = spellModel.find(id => {
           return spells_second_lvl[index].SkillId == id.Id;
         });
-        spell.spell_id = model?.Id;
+        spell.spell_id = model?.Id ?? "";
         spell.name = model?.Name;
         spell.description = model?.Description;
         spell.image = model?.Image;
+        spell.required_skills = spells_second_lvl[index].RequiredSkillIds;
+        spell.required_skills.forEach(ds => structure.sections.forEach(s => s.level_depth.forEach(l => l.spells.filter(sp => {
+          spell.required_skills = sp.spell_id == ds ? spell.required_skills.concat(sp.required_skills) : spell.required_skills;
+        }))));
         spell.state = "show";
         switch (spells_second_lvl.length) {
           case 1: {
@@ -98,11 +110,17 @@ export function structureBuild(structure:structureModel, race: typeof humans): s
         let model = spellModel.find(id => {
           return spells_third_lvl[index].SkillId == id.Id;
         });
-        spell.spell_id = model?.Id;
+        spell.spell_id = model?.Id ?? "";
         spell.name = model?.Name;
         spell.description = model?.Description;
         spell.image = model?.Image;
         spell.state = "show";
+
+        spell.required_skills = spells_third_lvl[index].RequiredSkillIds;
+        spell.required_skills.forEach(ds => structure.sections.forEach(s => s.level_depth.forEach(l => l.spells.filter(sp => {
+          spell.required_skills = sp.spell_id == ds ? spell.required_skills.concat(sp.required_skills) : spell.required_skills;
+        }))));
+
         switch (spells_third_lvl.length) {
           case 1: {
             spell.style = spell.style_one ? spell.style_one : "";

@@ -8,6 +8,7 @@
 <button (click)="createWheel(races.magi)">Magi</button>
 <button (click)="createWheel(races.varvars)">Varvars</button>
 <button (click)="reset()">RESET</button>
+<button ngModel="countSpells">Количество спеллов {{countSpells}}</button>
 <div class="container">
   <div class="header_container">
     <div *ngFor="let spell of structure.sections[0].level_depth[0].spells"
@@ -221,8 +222,14 @@
         </div>
       </div>
       <div class="circle central-c">
+        <button class="circle central-b" (click)="reset()">
+        </button>
         <div *ngFor="let spell of structure.sections[0].level_depth[1].spells"
              class="spell central_spell"
+             [hidden]="isSpellHide(spell)"
+             [class.not_selected]="isSpellNotSelected(spell)"
+             [class.selected]="isSpellSelected(spell)"
+             (click)="clickInsideSpell(spell, structure.sections[0])"
              style="{{spell.style}}">
           <div class="tooltip" *ngIf="spellHasName(spell)">
             <img src="assets/{{spell.image}}" class="central_image">
@@ -231,6 +238,10 @@
         </div>
         <div *ngFor="let spell of structure.sections[0].level_depth[2].spells"
              class="spell central_spell"
+             [hidden]="isSpellHide(spell)"
+             [class.not_selected]="isSpellNotSelected(spell)"
+             [class.selected]="isSpellSelected(spell)"
+             (click)="clickInsideSpell(spell, structure.sections[0])"
              style="{{spell.style}}">
           <div class="tooltip" *ngIf="spellHasName(spell)">
             <img src="assets/{{spell.image}}" class="central_image">

@@ -15,10 +15,11 @@ export interface levelModel {
 
 export interface spellInterface {
   id: number,
-  spell_id: string | undefined,
+  spell_id: string,
   name: string | undefined,
   description: string | undefined,
   image: string | undefined,
+  required_skills: string[],
   style: string,
   style_one?: string,
   style_two?: string,
