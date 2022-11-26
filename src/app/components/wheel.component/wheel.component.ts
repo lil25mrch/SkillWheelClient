@@ -1,7 +1,7 @@
 ﻿import { Component, OnInit } from "@angular/core";
 import { structure } from "src/app/structures/structure";
 import { sectionModel, spellInterface, structureModel } from "../../models/structure.model";
-import { cleanWheel, resetWheel, structureBuild } from "../../helpers/structure.builder";
+import { resetWheel, structureBuild } from "../../helpers/structure.builder";
 import { races } from "../../data/races";
 
 
@@ -19,7 +19,6 @@ export class WheelComponent implements OnInit{
 
   ngOnInit(): void {
     this.structure = structureBuild(this.structure, races.humans);
-    console.log(this.structure)
   }
 
   public isSpellShowed(spell: spellInterface) {
@@ -57,6 +56,20 @@ export class WheelComponent implements OnInit{
 
   public isSpellNotSelected(spell: spellInterface) {
     return spell.state == 'not_selected';
+  }
+
+  public isSpellPreSelected(spell: spellInterface) {
+    if(spell.spell_id && spell.required_skills.length != 0) {
+      // @ts-ignore
+      spell.required_skills.forEach(s => document.getElementById(s).style.filter = "invert(100%) drop-shadow(2px 2px 2px violet)"
+    )}
+  }
+
+  public clearSpellPreSelected(spell: spellInterface) {
+    if(spell.spell_id && spell.required_skills.length != 0) {
+      // @ts-ignore
+      spell.required_skills.forEach(s => document.getElementById(s).style.filter = ""
+      )}
   }
 
   public clickOutsideSpell(spell: spellInterface, spells: spellInterface[]) {

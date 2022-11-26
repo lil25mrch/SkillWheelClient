@@ -13,6 +13,7 @@
   <div class="header_container">
     <div *ngFor="let spell of structure.sections[0].level_depth[0].spells"
          class="spell central_spell"
+         id="{{spell.spell_id}}"
          style="{{spell.style}}">
       <div class="tooltip" *ngIf="spellHasName(spell)">
         <img src="assets/{{spell.image}}" class="image">
@@ -26,6 +27,9 @@
         <div *ngFor="let levelDepth of section.level_depth">
           <div *ngIf="levelDepth.id == 0">
             <div *ngFor="let spell of levelDepth.spells"
+                 id="{{spell.spell_id}}"
+                 (mouseenter)="isSpellPreSelected(spell)"
+                 (mouseleave)="clearSpellPreSelected(spell)"
                  class="spell outside_spell"
                  [hidden]="isSpellHide(spell)"
                  [class.not_selected]="isSpellNotSelected(spell)"
@@ -42,6 +46,9 @@
             <div *ngFor="let spell of levelDepth.spells">
               <div *ngIf="levelDepth.count == 3">
                 <div class="spell spell_first_circle_three" *ngIf="spellHasName(spell)"
+                     id="{{spell.spell_id}}"
+                     (mouseenter)="isSpellPreSelected(spell)"
+                     (mouseleave)="clearSpellPreSelected(spell)"
                      [hidden]="isSpellHide(spell)"
                      [class.not_selected]="isSpellNotSelected(spell)"
                      [class.selected]="isSpellSelected(spell)"
@@ -55,6 +62,9 @@
               </div>
               <div *ngIf="levelDepth.count == 4">
                 <div class="spell spell_first_circle_four" *ngIf="spellHasName(spell)"
+                     id="{{spell.spell_id}}"
+                     (mouseenter)="isSpellPreSelected(spell)"
+                     (mouseleave)="clearSpellPreSelected(spell)"
                      [hidden]="isSpellHide(spell)"
                      [class.not_selected]="isSpellNotSelected(spell)"
                      [class.selected]="isSpellSelected(spell)"
@@ -68,6 +78,9 @@
               </div>
               <div *ngIf="levelDepth.count == 5">
                 <div class="spell spell_first_circle_five" *ngIf="spellHasName(spell)"
+                     id="{{spell.spell_id}}"
+                     (mouseenter)="isSpellPreSelected(spell)"
+                     (mouseleave)="clearSpellPreSelected(spell)"
                      [hidden]="isSpellHide(spell)"
                      [class.not_selected]="isSpellNotSelected(spell)"
                      [class.selected]="isSpellSelected(spell)"
@@ -85,6 +98,10 @@
             <div *ngFor="let spell of levelDepth.spells">
               <div *ngIf="levelDepth.count == 1">
                 <div class="spell spell_second_circle_first" *ngIf="spellHasName(spell)"
+                     id="{{spell.spell_id}}"
+                     (mouseenter)="isSpellPreSelected(spell)"
+                     (mouseleave)="clearSpellPreSelected(spell)"
+                     [class.preselected]=""
                      [hidden]="isSpellHide(spell)"
                      [class.not_selected]="isSpellNotSelected(spell)"
                      [class.selected]="isSpellSelected(spell)"
@@ -98,6 +115,9 @@
               </div>
               <div *ngIf="levelDepth.count == 2" >
                 <div class="spell spell_second_circle_two" *ngIf="spellHasName(spell)"
+                     id="{{spell.spell_id}}"
+                     (mouseenter)="isSpellPreSelected(spell)"
+                     (mouseleave)="clearSpellPreSelected(spell)"
                      [hidden]="isSpellHide(spell)"
                      [class.not_selected]="isSpellNotSelected(spell)"
                      [class.selected]="isSpellSelected(spell)"
@@ -111,6 +131,9 @@
               </div>
               <div *ngIf="levelDepth.count == 3" >
                 <div class="spell spell_first_circle_three" *ngIf="spellHasName(spell)"
+                     id="{{spell.spell_id}}"
+                     (mouseenter)="isSpellPreSelected(spell)"
+                     (mouseleave)="clearSpellPreSelected(spell)"
                      [hidden]="isSpellHide(spell)"
                      [class.not_selected]="isSpellNotSelected(spell)"
                      [class.selected]="isSpellSelected(spell)"
@@ -124,6 +147,9 @@
               </div>
               <div *ngIf="levelDepth.count == 4">
                 <div class="spell spell_first_circle_four" *ngIf="spellHasName(spell)"
+                     id="{{spell.spell_id}}"
+                     (mouseenter)="isSpellPreSelected(spell)"
+                     (mouseleave)="clearSpellPreSelected(spell)"
                      [hidden]="isSpellHide(spell)"
                      [class.not_selected]="isSpellNotSelected(spell)"
                      [class.selected]="isSpellSelected(spell)"
@@ -137,6 +163,9 @@
               </div>
               <div *ngIf="levelDepth.count == 5">
                 <div class="spell spell_first_circle_five" *ngIf="spellHasName(spell)"
+                     id="{{spell.spell_id}}"
+                     (mouseenter)="isSpellPreSelected(spell)"
+                     (mouseleave)="clearSpellPreSelected(spell)"
                      [hidden]="isSpellHide(spell)"
                      [class.not_selected]="isSpellNotSelected(spell)"
                      [class.selected]="isSpellSelected(spell)"
@@ -154,6 +183,9 @@
             <div *ngFor="let spell of levelDepth.spells">
               <div *ngIf="levelDepth.count == 1" >
                 <div class="spell spell_third_circle_one" *ngIf="spellHasName(spell)"
+                     id="{{spell.spell_id}}"
+                     (mouseenter)="isSpellPreSelected(spell)"
+                     (mouseleave)="clearSpellPreSelected(spell)"
                      [hidden]="isSpellHide(spell)"
                      [class.not_selected]="isSpellNotSelected(spell)"
                      [class.selected]="isSpellSelected(spell)"
@@ -167,6 +199,9 @@
               </div>
               <div *ngIf="levelDepth.count == 2" >
                 <div class="spell spell_second_circle_two" *ngIf="spellHasName(spell)"
+                     id="{{spell.spell_id}}"
+                     (mouseenter)="isSpellPreSelected(spell)"
+                     (mouseleave)="clearSpellPreSelected(spell)"
                      [hidden]="isSpellHide(spell)"
                      [class.not_selected]="isSpellNotSelected(spell)"
                      [class.selected]="isSpellSelected(spell)"
@@ -180,6 +215,9 @@
               </div>
               <div *ngIf="levelDepth.count == 3" >
                 <div class="spell spell_first_circle_three" *ngIf="spellHasName(spell)"
+                     id="{{spell.spell_id}}"
+                     (mouseenter)="isSpellPreSelected(spell)"
+                     (mouseleave)="clearSpellPreSelected(spell)"
                      [hidden]="isSpellHide(spell)"
                      [class.not_selected]="isSpellNotSelected(spell)"
                      [class.selected]="isSpellSelected(spell)"
@@ -193,6 +231,9 @@
               </div>
               <div *ngIf="levelDepth.count == 4">
                 <div class="spell spell_first_circle_four" *ngIf="spellHasName(spell)"
+                     id="{{spell.spell_id}}"
+                     (mouseenter)="isSpellPreSelected(spell)"
+                     (mouseleave)="clearSpellPreSelected(spell)"
                      [hidden]="isSpellHide(spell)"
                      [class.not_selected]="isSpellNotSelected(spell)"
                      [class.selected]="isSpellSelected(spell)"
@@ -206,6 +247,9 @@
               </div>
               <div *ngIf="levelDepth.count == 5">
                 <div class="spell spell_first_circle_five" *ngIf="spellHasName(spell)"
+                     id="{{spell.spell_id}}"
+                     (mouseenter)="isSpellPreSelected(spell)"
+                     (mouseleave)="clearSpellPreSelected(spell)"
                      [hidden]="isSpellHide(spell)"
                      [class.not_selected]="isSpellNotSelected(spell)"
                      [class.selected]="isSpellSelected(spell)"
@@ -226,6 +270,9 @@
         </button>
         <div *ngFor="let spell of structure.sections[0].level_depth[1].spells"
              class="spell central_spell"
+             id="{{spell.spell_id}}"
+             (mouseenter)="isSpellPreSelected(spell)"
+             (mouseleave)="clearSpellPreSelected(spell)"
              [hidden]="isSpellHide(spell)"
              [class.not_selected]="isSpellNotSelected(spell)"
              [class.selected]="isSpellSelected(spell)"
@@ -238,6 +285,9 @@
         </div>
         <div *ngFor="let spell of structure.sections[0].level_depth[2].spells"
              class="spell central_spell"
+             id="{{spell.spell_id}}"
+             (mouseenter)="isSpellPreSelected(spell)"
+             (mouseleave)="clearSpellPreSelected(spell)"
              [hidden]="isSpellHide(spell)"
              [class.not_selected]="isSpellNotSelected(spell)"
              [class.selected]="isSpellSelected(spell)"

@@ -130,8 +130,6 @@ p {
 .image {
   height: 100%;
   width: 100%;
-  -webkit-filter: drop-shadow(2px 2px 2px #d9d2bf);
-  filter: drop-shadow(2px 2px 2px #d9d2bf);
 }
 
 div .spell:hover {
@@ -166,7 +164,6 @@ div .spell:hover .tooltip {
   position: absolute;
   bottom: 100%;
   left: 50%;
-
   /* Fade in tooltip - takes 1 second to go from 0% to 100% opac: */
   opacity: 0;
   transition: opacity 1s;
