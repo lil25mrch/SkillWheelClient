@@ -9,6 +9,14 @@
 <button (click)="createWheel(races.varvars)">Varvars</button>
 <button (click)="reset()">RESET</button>
 <button ngModel="countSpells">Количество спеллов {{countSpells}}</button>
+
+<div *ngIf="adminMode">
+  <label for="file">Choose File</label>
+  <input type="file"
+         id="file"
+         (change)="upload($event)">
+</div>
+
 <div class="container">
   <div class="header_container">
     <div *ngFor="let spell of structure.sections[0].level_depth[0].spells"

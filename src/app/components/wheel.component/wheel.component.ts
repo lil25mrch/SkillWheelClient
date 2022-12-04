@@ -1,8 +1,10 @@
 ﻿import { Component, OnInit } from "@angular/core";
-import { structure } from "src/app/structures/structure";
+import { structureDefault } from "src/app/structures/structureDefault";
 import { sectionModel, spellInterface, structureModel } from "../../models/structure.model";
 import { resetWheel, structureBuild } from "../../helpers/structure.builder";
 import { races } from "../../data/races";
+import { raceHelper } from "../../helpers/race.helper";
+import { ActivatedRoute } from "@angular/router";
 
 
 @Component({
@@ -11,14 +13,21 @@ import { races } from "../../data/races";
   styleUrls: ['./wheel.component.css']
 })
 export class WheelComponent implements OnInit{
-  public structure = structure;
+  public structure = structureDefault;
   public races = races;
+  public adminMode: boolean = false;
 
   public countSections: number[] = [];
   public countSpells: number = 0;
 
+  constructor(public route: ActivatedRoute) {}
+
   ngOnInit(): void {
     this.structure = structureBuild(this.structure, races.humans);
+    this.route.queryParams.subscribe(params => {
+        this.adminMode = params.adminMode;
+      }
+    )
   }
 
   public isSpellShowed(spell: spellInterface) {
@@ -213,11 +222,39 @@ export class WheelComponent implements OnInit{
     }
   }
 
+  public upload(files: any) {
+    let file = files.target.files[0];
+    let name = file.name.split(".", 1)[0];
+    let fileName = raceHelper.find(r => r.id = name)?.file;
+    if (fileName) {
+      this.createWheel(fileName);
+    } else {
+      console.log("Неправильный файл");
+    }
+  };
+
   public createWheel(race: typeof races.humans): structureModel {
-    this.reset();
+    this.resetWheel();
     this.countSections = [];
     this.countSpells = 0;
-    return structureBuild(this.structure, race);
+    return structureBuild(structureDefault, race);
+  }
+
+  public resetWheel(): structureModel {
+    for (let i = 0; i < this.structure.sections.length; i++) {
+      for(let j = 0; j < 4; j++) {
+        this.structure.sections[i].level_depth[j].spells.forEach(spell => {
+            spell.state = "show";
+            spell.spell_id = "";
+            spell.name = "";
+            spell.description = "";
+            spell.image = "";
+            spell.required_skills = [];
+          }
+        )
+      }
+    }
+    return structureDefault;
   }
 
   public reset() {
