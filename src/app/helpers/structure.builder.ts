@@ -1,8 +1,8 @@
 ﻿import spellModel from "../data/spell.json";
-import humans from "../data/humans.json";
 import { structureModel } from "../models/structure.model";
+import { raceModel } from "../data/races";
 
-export function structureBuild(structure:structureModel, race: typeof humans): structureModel  {
+export function structureBuild(structure:structureModel, race: raceModel[]): structureModel  {
   for (let i = 0; i < structure.sections.length; i++) {
     let spells_zero_lvl = race.filter(spell => structure.sections[i].section_id == spell.SectionId && structure.sections[i].level_depth[0].id == spell.DepthLevel);
     structure.sections[i].level_depth[0].spells.forEach((spell, index) => {

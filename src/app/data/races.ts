@@ -7,4 +7,61 @@ import gnomy from "src/app/data/gnomy.json";
 import magi from "src/app/data/magi.json";
 import varvars from "src/app/data/varvars.json";
 
-export const races = {humans, elves, necr, liga, demons, gnomy, magi, varvars}
+export interface raceInfoModel {
+  id: string,
+  name: string,
+  content: raceModel[]
+}
+
+export interface raceModel {
+  SkillId: string,
+  SectionId: number,
+  DepthLevel: number,
+  RequiredSkillIds: string[],
+
+}
+
+export const racesAr: raceInfoModel[] = [
+  {
+    id: "humans",
+    name: "Humans",
+    content: humans
+  },
+  {
+    id: "elves",
+    name: "Elves",
+    content: elves
+  },
+  {
+    id: "necr",
+    name: "Necr",
+    content: necr
+  },
+  {
+    id: "liga",
+    name: "Liga",
+    content: liga
+  },
+  {
+    id: "demons",
+    name: "Demons",
+    content: demons
+  },
+  {
+    id: "gnomy",
+    name: "Gnomy",
+    content: gnomy
+  },
+
+  {
+    id: "magi",
+    name: "Magi",
+    content: magi
+  },
+
+  {
+    id: "varvars",
+    name: "Varvars",
+    content: varvars
+  }
+]

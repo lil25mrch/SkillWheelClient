@@ -2,19 +2,26 @@
 import { structureDefault } from "src/app/structures/structureDefault";
 import { sectionModel, spellInterface, structureModel } from "../../models/structure.model";
 import { resetWheel, structureBuild } from "../../helpers/structure.builder";
-import { races } from "../../data/races";
+import { raceInfoModel, racesAr } from "../../data/races";
 import { raceHelper } from "../../helpers/race.helper";
 import { ActivatedRoute } from "@angular/router";
+import humans from "../../data/humans.json";
 
 
 @Component({
   selector: 'wheel',
   templateUrl: './wheel.component.html',
-  styleUrls: ['./wheel.component.css']
+  styleUrls: ['./wheel.component.css', './wheel.component2.css' ]
 })
 export class WheelComponent implements OnInit{
   public structure = structureDefault;
-  public races = races;
+  public races: raceInfoModel[] = racesAr;
+  public selectedRace: raceInfoModel = {
+    id: "humans",
+    name: "Humans",
+    content: humans
+  };
+
   public adminMode: boolean = false;
 
   public countSections: number[] = [];
@@ -23,7 +30,7 @@ export class WheelComponent implements OnInit{
   constructor(public route: ActivatedRoute) {}
 
   ngOnInit(): void {
-    this.structure = structureBuild(this.structure, races.humans);
+    this.structure = structureBuild(this.structure, this.races[0].content);
     this.route.queryParams.subscribe(params => {
         this.adminMode = params.adminMode;
       }
@@ -35,26 +42,26 @@ export class WheelComponent implements OnInit{
   }
 
   public isSpellHide(spell: spellInterface) {
-    const maxCountSpells = 3;
-
-    this.structure.sections.forEach(s => {
-      let selectedSpells: spellInterface[] = [];
-      s.level_depth.forEach(l => {
-        if (l.id != 0) {
-          selectedSpells = selectedSpells.concat(l.spells.filter(sp => sp.state == "selected"))
-        }
-      })
-
-      if ((maxCountSpells - selectedSpells.length) == 1) {
-        s.level_depth.forEach(l => {
-          l.spells.forEach(sp => {
-            if (sp.required_skills.length > 0 && sp.state != "selected" || spell.required_skills.includes(sp.spell_id)) {
-              sp.state = "hide"
-            }
-          });
-        })
-      }
-    });
+    // const maxCountSpells = 3;
+    //
+    // this.structure.sections.forEach(s => {
+    //   let selectedSpells: spellInterface[] = [];
+    //   s.level_depth.forEach(l => {
+    //     if (l.id != 0) {
+    //       selectedSpells = selectedSpells.concat(l.spells.filter(sp => sp.state == "selected"))
+    //     }
+    //   })
+    //
+    //   if ((maxCountSpells - selectedSpells.length) == 1) { //значит выбрано 2  и нужно оставить только ту, у которой нет зависимых спеллов в этой секции
+    //     s.level_depth.forEach(l => {
+    //       l.spells.forEach(sp => {
+    //         if (sp.required_skills.length > 0 && sp.state != "selected" || spell.required_skills.includes(sp.spell_id)) {
+    //           sp.state = "hide"
+    //         }
+    //       });
+    //     })
+    //   }
+    // });
 
     return spell.state == 'hide';
   }
@@ -69,16 +76,41 @@ export class WheelComponent implements OnInit{
 
   public isSpellPreSelected(spell: spellInterface) {
     if(spell.spell_id && spell.required_skills.length != 0) {
-      // @ts-ignore
-      spell.required_skills.forEach(s => document.getElementById(s).style.filter = "invert(100%) drop-shadow(2px 2px 2px violet)"
-    )}
+        spell.required_skills.forEach(s => {
+          // @ts-ignore
+          let doc = document.getElementById(s).style;
+          doc.background = "radial-gradient(circle, blue 0%, fuchsia 100%)";
+          doc.transform = "scale(1.1)";
+          // // @ts-ignore
+          // document.getElementById(s).className = document.getElementById(s).className.split("not_selected")[0];
+          // // @ts-ignore
+          // document.getElementById(s).className = document.getElementById(s).className + (" preselected");
+        }
+      )}
   }
 
   public clearSpellPreSelected(spell: spellInterface) {
     if(spell.spell_id && spell.required_skills.length != 0) {
-      // @ts-ignore
-      spell.required_skills.forEach(s => document.getElementById(s).style.filter = ""
+        spell.required_skills.forEach(s => {
+          // @ts-ignore
+          let doc = document.getElementById(s).style;
+          doc.background = ""
+          doc.transform = "";
+          // // @ts-ignore
+          // document.getElementById(s).className = document.getElementById(s).className.split(" preselected")[0];
+          // if(spell.state == "not_selected") {
+          //   // @ts-ignore
+          //   document.getElementById(s).className = document.getElementById(s).className + (" not_selected");
+          // }
+        }
       )}
+  }
+
+  public getTooltip(section: sectionModel): string {
+    return (section.section_id == 1 || section.section_id == 12 ? 'bottom'
+      : section.section_id == 2 || section.section_id == 3 || section.section_id == 4 || section.section_id == 5 ? "right"
+        : section.section_id == 6 || section.section_id == 7 ? "top"
+          : "left")
   }
 
   public clickOutsideSpell(spell: spellInterface, spells: spellInterface[]) {
@@ -93,7 +125,8 @@ export class WheelComponent implements OnInit{
       this.structure.sections.forEach(s => s.level_depth.forEach(l => l.spells.forEach(s => s.state = "not_selected")));
     }
 
-    if (spell.id == 1) {
+    if(spell.state !== "selected") {
+      if (spell.id == 1) {
         spells.forEach(spell => {
           if (spell.id == 1) {
             spell.state = "selected"
@@ -133,6 +166,7 @@ export class WheelComponent implements OnInit{
             spell.state = "selected"
           }
         })
+      }
     }
     this.countSpellsSelected();
   }
@@ -179,18 +213,58 @@ export class WheelComponent implements OnInit{
         }
       })))
 
+      selectedSpells = [...new Set(selectedSpells.map(item => item))]
       if ((spell.state == "not_selected") && selectedSpells.length < 3) {
         spell.state = "selected";
-
         if (!this.countSections.includes(spells.section_id)) {
           this.countSections.push(spells.section_id);
         }
 
         selectedSpells.push(spell);
-
+        console.log("ergrerfg");
+        selectedSpells = [...new Set(selectedSpells.map(item => item))]
         if (selectedSpells.length == 3) {
           sectionSpells.filter(s => s.state == "not_selected").forEach(sp => sp.state = "hide");
         }
+      }
+
+
+      const maxCountSpells = 3;
+
+      if (selectedSpells.length == 1) {
+        this.structure.sections[spells.section_id].level_depth.forEach(s => {
+
+        });
+        sectionSpells.forEach(s => {
+          // let reqSpellsInSection = sectionSpells.
+          if(s.required_skills.length == 0 && s != spell) {
+            s.state = "not_selected"
+          }
+
+          if (s.required_skills.length == 1 && sectionSpells.map(a => a.spell_id).includes(s.required_skills[0]) ) {
+            // this.structure.sections[spells.section_id].level_depth[0].spells.filter(s => s.id == 1)[0].state = "selected";
+            s.state = "not_selected"
+          }
+
+          if (s.required_skills.length == 2) {
+            // this.structure.sections[spells.section_id].level_depth[0].spells.filter(s => s.id == 1)[0].state = "selected";
+            s.state = "not_selected"
+          }
+
+
+          console.log(s.spell_id + " " + s.state)
+        })
+        // this.structure.sections.forEach(s => {
+        //   let selectedSpells: spellInterface[] = [];
+        //
+        //     s.level_depth.forEach(l => {
+        //       l.spells.forEach(sp => {
+        //         if (sp.required_skills.length > 0 && sp.state != "selected" || spell.required_skills.includes(sp.spell_id)) {
+        //           sp.state = "hide"
+        //         }
+        //       });
+        //     })
+        //   })
       }
 
       if (this.countSections.length == 5) {
@@ -216,8 +290,8 @@ export class WheelComponent implements OnInit{
           s.state = "selected";
         });
       }
-
-      this.structure.sections[spells.section_id].level_depth[0].spells.filter(s => s.id == 3)[0].state
+      selectedSpells = [...new Set(selectedSpells.map(item => item))]
+      // this.structure.sections[spells.section_id].level_depth[0].spells.filter(s => s.id == 3)[0].state
       this.countSpellsSelected();
     }
   }
@@ -233,7 +307,7 @@ export class WheelComponent implements OnInit{
     }
   };
 
-  public createWheel(race: typeof races.humans): structureModel {
+  public createWheel(race: any): structureModel {
     this.resetWheel();
     this.countSections = [];
     this.countSpells = 0;
@@ -264,15 +338,15 @@ export class WheelComponent implements OnInit{
   };
 
   public trackById(index: number, section: sectionModel) {
-      return section.section_id
+    return section.section_id
   }
 
   public filterSection() {
-      return this.structure.sections.filter(s => s.section_id != 0)
+    return this.structure.sections.filter(s => s.section_id != 0)
   }
 
   public spellHasName(spell: spellInterface): boolean {
-      return spell.name != "";
+    return spell.name != "";
   }
 
   public countSpellsSelected() {
