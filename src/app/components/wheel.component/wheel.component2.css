@@ -116,3 +116,51 @@ li:nth-child(12) {
   background: coral;
   transform: rotate(330deg) skewY(-60deg);
 }
+
+.dropdown-button .tooltiptext {
+  visibility: hidden;
+  width: 280px;
+  height: fit-content;
+  background-color: rgba(71, 33, 131, 0.8);
+  border: 8px double #230b37;
+  color: #fff;
+  text-align: center;
+  border-radius: 15px;
+  padding: 0 10px 10px;
+  position: absolute;
+  /* Fade in tooltip - takes 1 second to go from 0% to 100% opac: */
+  opacity: 0;
+  transition: opacity 1s;
+}
+
+.dropdown-button:hover .tooltiptext {
+  visibility: visible;
+  opacity: 1;
+}
+
+.dropdown-button .tooltiptext .tooltip_name {
+  margin: 10px;
+  font-size: 20px;
+  display: inline-block;
+}
+
+.dropdown-button-right{
+  margin-top: -17%;
+  left: 100%;
+}
+
+.dropdown-image{
+  height: 10%;
+  margin: -7% 5%;
+  position: absolute;
+  left: 0;
+}
+
+.dropdown-tooltip-image{
+  height: 80%;
+}
+
+.dropdown-button-option-text {
+  display: inline-block;
+  text-align: center;
+}

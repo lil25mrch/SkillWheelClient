@@ -12,9 +12,25 @@
 <div class="container">
   <div class="header_container">
     <div class="dropdown">
-      <button class="dropbtn">Race </button>
+      <button class="dropbtn">{{selectedRace.name}}</button>
       <div id="myDropdown" class="dropdown-content">
-        <button *ngFor="let x of races" class="dropdown-button" (click)="createWheel(x.content)">{{x.name}}</button>
+        <button *ngFor="let x of races" class="dropdown-button" (click)="createWheel(x)">{{x.name}}</button>
+      </div>
+    </div>
+
+    <div class="dropdown">
+      <button class="dropbtn">{{selectedHero.name}}</button>
+      <div id="myDropdown" class="dropdown-content">
+          <button *ngFor="let h of heroArByRace" class="dropdown-button" (click)="setupHeroesSpells(h)">
+            <img src="assets/{{h.Image}}" class="dropdown-image">
+            <div class="dropdown-button-option-text">{{h.Name}}</div>
+
+            <div class="tooltiptext dropdown-button-right">
+              <img src="assets/{{h.Image}}" class="dropdown-tooltip-image"><br>
+              <span class="tooltip_name">{{h.Name}}</span><br>
+              {{h.Description}}
+            </div>
+          </button>
       </div>
     </div>
 

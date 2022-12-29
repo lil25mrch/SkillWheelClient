@@ -18,7 +18,7 @@ export const structureDefault: structureModel = {
               required_skills: [],
               style: "",
               style_three: "",
-              style_four: "top: 0; left: 36%;",
+              style_four: "top: 0; left: 57%;",
               style_five: "",
               state: "",
               color: "background-color: #193B94;"
@@ -32,7 +32,7 @@ export const structureDefault: structureModel = {
               required_skills: [],
               style: "",
               style_three: "",
-              style_four: "top: 0; left: 43%",
+              style_four: "top: 0; left: 64%",
               style_five: "",
               state: "",
               color: "background-color: #193B94;"
@@ -46,7 +46,7 @@ export const structureDefault: structureModel = {
               required_skills: [],
               style: "",
               style_three: "",
-              style_four: "top: 0; left: 50%",
+              style_four: "top: 0; left: 71%",
               style_five: "",
               state: "",
               color: "background-color: #193B94;"
@@ -60,7 +60,7 @@ export const structureDefault: structureModel = {
               required_skills: [],
               style: "",
               style_three: "",
-              style_four: "top: 0; left: 57%",
+              style_four: "top: 0; left: 78%",
               style_five: "",
               state: "",
               color: "background-color: #193B94;"

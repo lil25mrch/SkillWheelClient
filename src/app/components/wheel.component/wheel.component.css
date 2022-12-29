@@ -19,6 +19,7 @@
   border-radius: 50%;
   position: absolute;
   cursor: pointer;
+  display: inline-block;
   height: 5.5%;
   width: 5.5%;
   background-color: rgba(71, 33, 131, 0.8);
@@ -42,7 +43,7 @@ div .preselected {
   text-align: center;
   position: absolute;
   display: flex;
-  left: 71%;
+  left: 91%;
   top: 3%;
 }
 

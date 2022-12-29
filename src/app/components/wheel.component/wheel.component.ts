@@ -6,7 +6,8 @@ import { raceInfoModel, racesAr } from "../../data/races";
 import { raceHelper } from "../../helpers/race.helper";
 import { ActivatedRoute } from "@angular/router";
 import humans from "../../data/humans.json";
-
+import heroes from "../../data/heroes.json";
+import {heroAr, heroInfoModel, heroModel} from "../../data/heroes-by-race";
 
 @Component({
   selector: 'wheel',
@@ -16,11 +17,27 @@ import humans from "../../data/humans.json";
 export class WheelComponent implements OnInit{
   public structure = structureDefault;
   public races: raceInfoModel[] = racesAr;
+  public heroesInfo: heroInfoModel[] = heroAr;
+  public heroes: any[] = heroes;
   public selectedRace: raceInfoModel = {
     id: "humans",
     name: "Humans",
     content: humans
   };
+
+  public defaultHero: heroModel = {
+    id: "default",
+    name: "",
+    defaultSkillIds: [],
+    description: "",
+    image: "",
+  };
+
+
+  public selectedHero: heroModel = this.defaultHero;
+
+
+  public heroArByRace: any[] = [];
 
   public adminMode: boolean = false;
 
@@ -31,6 +48,14 @@ export class WheelComponent implements OnInit{
 
   ngOnInit(): void {
     this.structure = structureBuild(this.structure, this.races[0].content);
+    let heroInfo = this.heroesInfo.find(e => e.id == this.races[0].id);
+    this.selectedHero.name = heroInfo?.defaultName ?? "";
+    this.heroArByRace = this.heroes.filter(h => heroInfo?.heroIds.find(i => i == h.Id));
+    this.structure.sections.forEach(s => s.level_depth.forEach(l => l.spells.forEach(sp => {
+      if (sp.state == "show") {
+        this.countSpells++;
+      }
+    })))
     this.route.queryParams.subscribe(params => {
         this.adminMode = params.adminMode;
       }
@@ -308,10 +333,20 @@ export class WheelComponent implements OnInit{
   };
 
   public createWheel(race: any): structureModel {
-    this.resetWheel();
-    this.countSections = [];
     this.countSpells = 0;
-    return structureBuild(structureDefault, race);
+    this.resetWheel();
+    this.selectedRace = race;
+    let heroInfo = this.heroesInfo.find(e => e.id == race.id);
+    this.selectedHero.name = heroInfo?.defaultName ?? "";
+    this.heroArByRace = this.heroes.filter(h => heroInfo?.heroIds.find(i => i == h.Id));
+    this.countSections = [];
+    this.structure = structureBuild(structureDefault, race.content);
+    this.structure.sections.forEach(s => s.level_depth.forEach(l => l.spells.forEach(sp => {
+      if (sp.state == "show" && sp.name != "") {
+        this.countSpells++;
+      }
+    })))
+    return this.structure;
   }
 
   public resetWheel(): structureModel {
@@ -356,5 +391,9 @@ export class WheelComponent implements OnInit{
         this.countSpells++;
       }
     })))
+  }
+
+  public setupHeroesSpells(hero: any) {
+
   }
 }
