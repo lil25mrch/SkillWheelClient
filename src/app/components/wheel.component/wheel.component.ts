@@ -394,6 +394,44 @@ export class WheelComponent implements OnInit{
   }
 
   public setupHeroesSpells(hero: any) {
+    this.countSpells = 0;
+    if (!this.isDefaultHero(hero)) {
+      this.selectedHero.name = hero.Name;
+      let heroInfo = this.heroesInfo.find(e => e.id == this.selectedRace.id);
 
+      if(this.selectedHero.name != heroInfo?.defaultName && this.heroArByRace.filter((h: any) => h.Name == heroInfo?.defaultName).length == 0) {
+        this.heroArByRace = this.heroArByRace.concat({
+            Id: heroInfo?.id,
+            Name: heroInfo?.defaultName,
+            DefaultSkillIds: [],
+            Description: "",
+            Image: "",
+          }
+        )
+      }
+
+      this.structure.sections.forEach(s => s.level_depth.forEach(l => l.spells.forEach(sp => {
+        sp.state = "not_selected";
+        hero.DefaultSkillIds.forEach((s: string) => {
+          if (s == sp.spell_id) {
+            sp.state = "selected"
+            this.countSpells++;
+          }
+        })
+      })))
+    } else {
+      this.selectedHero.name = hero.Name;
+      this.heroArByRace = this.heroArByRace.slice(0, this.heroArByRace.length-1)
+      this.structure.sections.forEach(s => s.level_depth.forEach(l => l.spells.forEach(sp => {
+        sp.state = "show";
+        if (sp.state == "show" && sp.name != "") {
+          this.countSpells++;
+        }
+      })))
+    }
+  }
+
+  public isDefaultHero(hero: any): boolean {
+    return hero.Image == ""
   }
 }

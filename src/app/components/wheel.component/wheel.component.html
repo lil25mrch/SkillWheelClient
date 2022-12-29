@@ -22,10 +22,9 @@
       <button class="dropbtn">{{selectedHero.name}}</button>
       <div id="myDropdown" class="dropdown-content">
           <button *ngFor="let h of heroArByRace" class="dropdown-button" (click)="setupHeroesSpells(h)">
-            <img src="assets/{{h.Image}}" class="dropdown-image">
+            <img src="assets/{{h.Image}}" class="dropdown-image" *ngIf="!isDefaultHero(h)">
             <div class="dropdown-button-option-text">{{h.Name}}</div>
-
-            <div class="tooltiptext dropdown-button-right">
+            <div class="tooltiptext dropdown-button-right" *ngIf="!isDefaultHero(h)">
               <img src="assets/{{h.Image}}" class="dropdown-tooltip-image"><br>
               <span class="tooltip_name">{{h.Name}}</span><br>
               {{h.Description}}
